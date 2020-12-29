@@ -1,0 +1,100 @@
+#
+#    Scan a MARC file or database table and look up the author and title in
+#    various external sources to check for a missing 490 (series) field.
+#
+#    License:  CC BY 3.0 US, https://creativecommons.org/licenses/by/3.0/us/
+#
+#    Graeme Williams
+#    carryonwilliams@gmail.com
+#
+#    Usage:  seriescheck --inputfile <MARC input file>
+#       or:  seriescheck --inputtable <name of database table>
+#
+#    The database table should have columns for bibnumber, tag, indicators, and tagData.
+#    tagData is all the subfields glommed together.  You can get more information from
+#    the mydb.py file.import requests
+
+from collections import Counter
+import argparse
+import requests
+
+from lib import mydb, mymarc, opac, goodreads
+
+parser = argparse.ArgumentParser(description=
+    """Specify either an input file or a MySQL input table.
+       (The database name is hard-coded.  Sorry.)
+       
+       --libcode is optional but is needed to check Novelist.
+       If it's not included, Novelist checking will be skipped.
+    """
+    )
+parser.add_argument("--libcode", "-lc", required=False)
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument("--inputfile", "-if")
+group.add_argument("--inputtable", "-it")
+
+args = parser.parse_args()
+
+check_cnx = mydb.Connection(schema="isfdb")
+check_table = mydb.Table(check_cnx, "author_title_series_name")
+
+# if you don't specify a library code, Novelist will not be checked
+libcode = args.libcode
+
+counts = Counter()
+session = requests.Session()
+limit_counter = 0
+
+# For each MARC record in the file or database table:
+#   - collect authors from 100, 700;
+#   - run each check in the checkList
+for bibnum, theRecord in mymarc.recordgenerator(args.inputfile, args.inputtable):
+    if (limit_counter := limit_counter+1) > 10000:
+        print("Hit limit from input table!")
+        break
+    if (field100 := theRecord['100']):
+        try:
+            author_name = mymarc.flipnames(field100['a']).encode("utf-8", "strict").decode('latin-1', "strict")
+            title = theRecord['245']['a'].rstrip("/: ").encode("utf-8", "strict").decode('latin-1', "strict")
+        except:
+            # print(f"Encoding problem with {field100['a']} or {record['245']['a']}")
+            counts['Character conversion failed'] += 1
+            continue
+        query = (
+            f"WHERE author={mydb.dbescape(author_name)}"
+            f" AND title={mydb.dbescape(title)}"
+        )
+        try:
+            row = check_table.readfirstrow(query=query, debug=False)
+        except:
+            # print(f"Problem with {author_name} and {title}")
+            counts['Query failed'] += 1
+            continue
+        
+        # At this point, we have the MARC record, from which we have extracted the title and author_name
+        # row has been returned from the local ISFDB instance, but might be None
+        # We're going to check whether the record has a 490 field and whether row is not None,
+        # BUT we're not going to check that the series names match.
+
+        # print(f"Checking {title} (by) {author_name}")
+        opac_check = "OPAC:Y" if theRecord["490"] else "OPAC:N"
+        db_check = "ISFDB:Y" if row else "ISFDB:N"
+        key = "/".join([opac_check, db_check])
+        counts[key] += 1
+
+        # We only do further checks for records that, according to ISFDB, have missing
+        # series information.  This is to avoid load on Novelist or Goodreads.
+
+        if opac_check == "OPAC:N" and db_check == "ISFDB:Y":
+            isfdb_seriesname = row[2]
+            # print(f"Missing 490 in {bibnum}: {title} (by) {author_name} = {isfdb_seriesname}")
+            if bool(libcode) and bool(bibnum):
+                novelist_seriesname = opac.checkNoveListseries(session, libcode, bibnum, requestdelay=5)
+            else:
+                novelist_seriesname = None
+            goodreads_seriesname = goodreads.get_seriesname(session, goodreads.get_worknumber(session, author_name, title))
+            print(bibnum, author_name, title, isfdb_seriesname, novelist_seriesname, goodreads_seriesname, sep = ',')
+
+print(counts)
+
+session.close()

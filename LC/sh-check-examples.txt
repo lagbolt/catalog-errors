@@ -1,0 +1,667 @@
+2281734134 : a:Horror fiction(N) : 
+1416502134 : a:Orwell, George(N) : d:1903-1950(I)t:Nineteen eighty-four(N) : 
+2025223134 : a:Secrets(C)v:Fiction(I)
+2261877134 : a:Characters in literature(C)v:Juvenile fiction(I)
+2260692134 : a:Henry, John(N) : c:(Legendary character)(I)v:Fiction(I)
+2260692134 : a:Brer Rabbit(N) : c:(Trickster)(I)v:Fiction(I)
+1960537134 : a:Star wars(N) : v:Juvenile fiction(I)
+2284113134 : a:United States(Y) : b:Federal Bureau of Investigation(N) : v:Fiction(I)
+2259607134 : a:Downloadable audio books(N) : 
+2264086134 : a:Star Wars, the rise of Skywalker (Motion picture)(N) : v:Juvenile literature(I)
+2291771134 : a:Science Fiction(N) : 
+2291771134 : a:New Experience(N) : v:Social Themes(I)
+1990438134 : a:Electronic books for children(N) : 
+2227033134 : a:Dystopian fiction(N) : 
+2290574134 : a:Military(N) : v:Science Fiction(I)
+2290574134 : a:Action &amp; Adventure(N) : v:Science Fiction(I)
+2290574134 : a:Space Opera(N) : v:Science Fiction(I)
+2274472134 : a:Mary(N) : b:I(N) : c:Queen of England(I)d:1516-1558(I)v:Juvenile fiction(I)
+2022514134 : a:Juvenile sound recording(N) : 
+1878935134 : a:Survivial(N) : v:Juvenile fiction(I)
+2017759134 : a:Carroll, Lewis(N) : d:1832-1898(I)x:Characters(Y) : v:Juvenile fiction(I)
+2189856134 : a:Adventure(N) : v:Television series(I)
+1482888134 : a:Exposition universelle de 1889(N) : c:(Paris, France)(I)v:Juvenile fiction(I)
+2045557134 : a:Yound adult fiction(N) : 
+2150206134 : a:eAudiobooks(N) : 
+2206014134 : a:Roswell (N.M.)(N) : v:Drama(I)
+1809698134 : a:Shakespeare, William(N) : d:1564-1616(I)t:Midsummer night's dream(N) : v:Fiction(I)
+1809698134 : a:Baldwin Hills (Los Angeles, Calif.)(N) : v:Fiction(I)
+2276767134 : a:Artificial intellitgence(N) : v:Fiction(I)
+1975310134 : a:Star Wars, episode VII, the force awakens (Motion picture)(N) : v:Juvenile literature(I)
+2005014134 : a:Prefect, Ford(N) : v:Fiction(I)
+1664324134 : a:Star wars fiction(N) : 
+1393948134 : a:Cupid (Roman deity)(N) : v:Juvenile fiction(I)
+2264990134 : a:Marlborough (England)(N) : v:Fiction(I)
+2284683134 : a:Shelley, Mary Wollstonecraft(N) : d:1797-1851(I)t:Frankenstein(Y) : v:Juvenile fiction(I)
+2226221134 : a:Elizabeth(N) : b:I(N) : c:Queen of England(I)d:1533-1603(I)v:Juvenile fiction(I)
+2190541134 : a:Cleopatra(N) : c:Queen of Egypt(I)d:-30 B.C(I)v:Juvenile fiction(I)
+2174223134 : a:Celebrity(N) : v:Fiction(I)
+2072201134 : a:Racing, Automobile(N) : v:Fiction(I)
+1915833134 : a:Lucas, George(N) : d:1944-(I)t:Star wars(N) : v:Adaptations(I)
+1835639134 : a:Survival stories(N) : 
+2125312134 : a:Brin, David(N) : v:Film adaptations(I)
+2124157134 : a:eComic(N) : 
+2160324134 : a:Droughts(Y) : x:Juvenile Fiction(N) : 
+2047696134 : a:Circe(N) : c:(Mythological character)(I)v:Juvenile fiction(I)
+1957673134 : a:Cartoons and comics(C)
+2193189134 : a:Rand, Ayn(N) : v:Film adaptations(I)
+2066360134 : a:Movie novels(N) : 
+2004843134 : a:Talking books for young adults(N) : 
+2192391134 : a:Gender-identity(N) : v:Fiction(I)
+2008636134 : a:Einstein, Albert(N) : d:1879-1955(I)v:Fiction(I)
+1794935134 : a:High interest-low voacbulary books(N) : 
+1851619134 : a:L'Engle, Madeleine(N) : t:Wrinkle in time(N) : x:Adaptations(Y) : 
+2075705134 : a:Life on other plantets(N) : v:Fiction(I)
+2284374134 : a:Star trek: Picard (Television program)(N) : v:Fiction(I)
+2280963134 : a:Picard, Jean-Luc(N) : d:2305-(I)v:Juvenile fiction(I)
+2209920134 : a:Kings, queens, rulers, etc(C)v:Juvenile fiction(I)
+2267205134 : a:Young Adult fiction(N) : 
+2267303134 : a:Caesar, Julius(N) : v:Juvenile fiction(I)
+2086884134 : a:Life on other planets(Y) : b:vJuvenile fiction(N) : 
+2042204134 : a:Captain America, civil war (Motion picture)(N) : x:Adaptations(Y) : v:Juvenile fiction(I)
+1994017134 : a:Toys, Dolls, Puppets(N) : v:Juvenile fiction(I)
+2034404134 : a:Stilton, Geronimo(N) : v:Juvenile fiction(I)
+1915108134 : a:Families(Y) : z:Missouri(Y) : z:Kansas City(N) : v:Fiction(I)
+1837592134 : a:Einstein-Marić, Mileva(N) : d:1875-1948(I)v:Juvenile fiction(I)
+1837592134 : a:Einstein, Albert, 1879-1955(N) : x:Family(Y) : v:Juvenile fiction(I)
+1813603134 : a:Patterson, James(N) : d:1947-(I)v:Adaptations(I)v:Comic books, strips, etc(I)
+1791413134 : a:Space travel(N) : v:Fiction(I)
+1566447134 : a:English poetry(Y) : y:Old English, ca 450-1100(N) : v:Modernized versions(I)v:Film and video adaptations(I)
+1566447134 : a:Beowulf (Legendary character)(N) : v:Drama(I)
+1566447134 : a:Grendel (Legendary character)(N) : v:Drama(I)
+1566447134 : a:Computer animation films(N) : 
+2121308134 : a:Disney Star Darlings (Television program)(N) : 
+1923235134 : a:Politicial intrigue(N) : v:Fiction(I)
+1930468134 : a:Spy masters(N) : v:Fiction(I)
+1922034134 : a:Earth(N) : v:Fiction(I)
+2297166134 : a:Junior fiction(N) : 
+2284086134 : a:Volcanic eruptions(Y) : z:New Zealand(Y) : z:Tongariro National Park(N) : v:Fiction(I)
+2245211134 : a:Firefly (Television program)(N) : 
+2183201134 : a:Imaginary creatures(C)v:Fiction(I)
+2190773134 : a:Apocalyptic comics(N) : 2:lcgft(I)
+2190773134 : a:Science fiction comics(N) : 
+2167210134 : a:Superhero comics(N) : 
+2167210134 : a:Fantasy comics(N) : 
+2179126134 : a:Jurassic World: fallen kingdom (Motion picture)(N) : v:Juvenile literature(I)
+2189896134 : a:Fortnite Battle Royale (Video game)(N) : v:Juvenile fiction(I)
+2182058134 : a:New York (NY)(N) : v:Juvenile fiction(I)
+2159785134 : a:Secrecy in government(N) : v:Fiction(I)
+2251129134 : a:Murad(N) : b:IV(N) : c:Sultan of the Turks(I)d:1612-1640(I)v:Fiction(I)
+2071805134 : a:Good vs evil(N) : v:Comic books, strips, etc(I)v:Juvenile fiction(I)
+2118540134 : a:Spanish language materials(C)
+2285775134 : a:Assassin's creed series (Video game)(N) : v:Juvenile fiction(I)
+2115634134 : a:Recycling (Waste)(C)v:Juvenile fiction(I)
+2086101134 : a:Apocalyptic fiction(N) : 2:lcgft(I)
+2091855134 : a:Star Wars(N) : v:Juvenile fiction(I)
+2150499134 : a:Choice(C)v:Fiction(I)
+2233000134 : a:Manhattan Project (U.S.)(N) : v:Fiction(I)
+1996213134 : a:Emotional problems(C)v:Juvenile fiction(I)
+1991310134 : a:Extraterrestial beings(N) : v:Juvenile fiction(I)
+2049528134 : a:Action and adventure comics(N) : 
+1984255134 : a:You choose(N) : 
+1953316134 : a:Louis(N) : b:XIII(N) : c:King of France(I)d:1601-1643(I)v:Fiction(I)
+1953316134 : a:Richelieu, Armand Jean du Plessis(N) : c:duc de(I)d:1585-1642(I)v:Fiction(I)
+1949856134 : a:Wells, H. G(N) : q:(Herbert George)(N) : d:1866-1946(I)v:Fiction(I)
+2043075134 : a:Science fiction, Young adult(N) : 
+1945165134 : a:Tesla, Nikola(N) : d:1856-1943(I)v:Juvenile fiction(I)
+2150927134 : a:Butler, Octavia E(N) : x:Criticism and interpretation(Y) : 
+1945396134 : a:Captain America, the first avenger (Motion picture)(N) : x:Adaptations(Y) : v:Juvenile fiction(I)
+1923984134 : a:Lindbergh, Charles A(N) : q:(Charles Augustus)(N) : d:1902-1974(I)v:Juvenile fiction(I)
+1936752134 : a:Radio and television novels(N) : 
+1945428134 : a:Iron Man (Motion picture)(N) : x:Adaptations(Y) : v:Juvenile fiction(I)
+1945428134 : a:Iron Man 2 (Motion picture)(N) : x:Adaptations(Y) : v:Juvenile fiction(I)
+1941639134 : a:H.I.V.E (Imaginary organization)(N) : v:Fiction(I)
+1915234134 : a:Robbers and outlaws(C)v:Juvenile fiction(I)
+1883588134 : a:Young aPOP/ROCK dult fiction(N) : 
+2141289134 : a:Thor(N) : c:(Norse deity)(I)v:Juvenile fiction(I)
+2252690134 : a:Alekseĭ Nikolaevich(N) : c:Czarevitch, son of Nicholas II, Emperor of Russia(I)d:1904-1918(I)v:Juvenile sound recordings(I)
+2252690134 : a:Anastasii͡a Nikolaevna(N) : c:Grand Duchess, daughter of Nicholas II, Emperor of Russia(I)d:1901-1918(I)v:Juvenile sound recordings(I)
+2252690134 : a:Nicholas(N) : b:II(N) : c:Emperor of Russia(I)d:1868-1918(I)x:Family(Y) : v:Juvenile sound recordings(I)
+1879219134 : a:Anastasi︠i︡a Nikolaevna(N) : c:Grand Duchess, daughter of Nicholas II, Emperor of Russia(I)d:1901-1918(I)v:Juvenile fiction(I)
+1990925134 : a:Science &amp; Technology(N) : 
+1909344134 : a:Anastasii︠a︡ Nikolaevna(N) : c:Grand Duchess, daughter of Nicholas II, Emperor of Russia(I)d:1901-1918(I)v:Juvenile fiction(I)
+2224974134 : a:Hard Science Fiction(N) : v:Science Fiction(I)
+2109177134 : a:Lower Saxony (Germany)(N) : x:History(Y) : v:Fiction(I)
+1784921134 : a:StarCraft(N) : v:Fiction(I)
+1754984134 : a:Liaden Universe (Imaginary place)(N) : v:Fiction(I)
+1736013134 : a:Escape(N) : v:Juvenile fiction(I)
+1736013134 : a:Thirteen-year-old boys(N) : v:Juvenile fiction(I)
+2207010134 : a:Computer hackers(N) : z:New York (State)(Y) : z:New York(Y) : v:Juvenile fiction(I)
+1978796134 : a:Television programs for the hearing impaired(N) : 2:lcgft(I)
+1472878134 : a:Darwin, Charles(N) : d:1809-1882(I)v:Fiction(I)
+1337401134 : a:Herbert, Frank(N) : 
+1927543134 : a:Dumas, Alexandre(N) : d:1802-1870(I)v:Film adaptations(I)
+1927543134 : a:Doyle, Arthur Conan(N) : d:1859-1930(I)v:Film adaptations(I)
+1927543134 : a:Musical(N) : 2:migfg(I)
+2262604134 : a:Liaden universe (Imaginary place)(N) : v:Fiction(I)
+2086948134 : a:Mars(N) : c:(Roman deity)(I)v:Fiction(I)
+2065172134 : a:Supsense fiction(N) : 
+2013645134 : a:Kirk, James T.(N) : d:2233-2371(I)v:Fiction(I)
+1936102134 : a:Space exploration(N) : v:Fiction(I)
+1766441134 : a:Dare, Virginia(N) : d:b. 1587(I)v:Juvenile fiction(I)
+1766441134 : a:Roanoke Colony(N) : v:Juvenile fiction(I)
+2252692134 : a:Downloadable books for children(N) : 
+2252692134 : a:Science Juvenile fiction(N) : 
+2005555134 : a:Edward(N) : b:V(N) : c:King of England(I)d:1470-1483(I)v:Fiction(I)
+2005555134 : a:Richard(N) : c:Duke of York(I)d:1472-1483(I)v:Fiction(I)
+2005555134 : a:Richard(N) : b:III(N) : c:King of England(I)d:1452-1485(I)v:Fiction(I)
+1962390134 : a:Nostradamus(N) : d:1503-1566(I)v:Fiction(I)
+1973853134 : a:Playaway(N) : 
+2286093134 : a:Revenger (Imaginary place)(N) : v:Fiction(I)
+2289349134 : a:United States(Y) : b:Coast Guard(N) : x:Employees(Y) : v:Fiction(I)
+2291616134 : a:Media Tie-In(N) : v:FICTION(I)
+2283840134 : a:Alien Contact(N) : v:Science Fiction(I)
+2271881134 : a:Westworld (Television program)(N) : x:Psychological aspects(Y) : 
+2208133134 : a:Racially-mixed people(N) : v:Juvenile fiction(I)
+2199108134 : a:Back to the future (Motion picture)(N) : v:Parodies, imitations, etc(I)
+2211274134 : a:Bakić, Asja(N) : d:1982-(I)v:Translations into English(I)
+2199825134 : a:Cyberpunk(N) : 
+2221164134 : a:Apocalyptic &amp; Post-Apocalyptic(N) : v:Science Fiction(I)
+2209122134 : a:Halo (Video game)(N) : v:Fiction(I)
+2246376134 : a:amily secrets(N) : v:Fiction(I)
+2278583134 : a:Utopian fiction(N) : 
+2275031134 : a:Star trek: Discovery (Television program)(N) : v:Fiction(I)
+2228133134 : a:Glenlyon (Imaginary place)(N) : v:Fiction(I)
+2255564134 : a:Româan(N) : 
+2255564134 : a:Dictatiorship(N) : v:Fiction(I)
+2274876134 : a:Star trek fiction(N) : 
+2254430134 : a:Military fiction(N) : 
+2203968134 : a:Project MKULTRA(N) : v:Fiction(I)
+2283893134 : a:United States(Y) : b:Navy(Y) : b:SEALs(N) : v:Fiction(I)
+2151243134 : a:Star Wars, the last Jedi (Motion picture)(N) : v:Adaptations(I)
+2132687134 : a:Autonomous vehicles(N) : v:Juvenile fiction(I)
+2117262134 : a:Freedom(C)v:Juvenile fiction(I)
+2183327134 : a:Jane Seymour(N) : c:Queen, consort of Henry VIII, King of England(I)d:1509?-1537(I)v:Juvenile fiction(I)
+2183327134 : a:Henry(N) : b:VIII(N) : c:King of England(I)d:1491-1547(I)v:Juvenile fiction(I)
+2218997134 : a:Halo (Imaginary place)(N) : v:Fiction(I)
+2181992134 : a:Comic-Con(N) : v:Juvenile fiction(I)
+2237935134 : a:Dishonored (Game)(N) : v:Fiction(I)
+2226333134 : a:Korean language materials(C)
+2261034134 : a:Women Sleuths(N) : 
+2180268134 : a:Eaudiobook(N) : 
+2269885134 : a:Riker, William T.(N) : d:2335-(I)v:Fiction(I)
+2227335134 : a:Space operas(N) : 
+2185408134 : a:Somerset (England)(N) : v:Fiction(I)
+2235309134 : a:Civil war (Marvel Comics Group)(N) : 
+2201129134 : a:Juvenile works(N) : 2:lcgft(I)
+2127606134 : a:Artemis(N) : c:(Greek deity)(I)v:Fiction(I)
+2048109134 : a:Princess(N) : v:Young adult fiction(I)
+2145187134 : a:Apes--Fiction(N) : 
+2100039134 : a:Eden (Imaginary place)(N) : v:Fiction(I)
+2099958134 : a:Parallel universes(N) : v:Fiction(I)
+2256120134 : a:Exeter (England)(N) : v:Fiction(I)
+2103037134 : a:Government, resistance to(N) : v:Juvenile fiction(I)
+2079197134 : a:International Criminal Police Organization(N) : v:Fiction(I)
+2079663134 : a:Interplanetary travel(N) : v:Fiction(I)
+2043848134 : a:Washington (D.C.)(Y) : e:setting(N) : 
+2086637134 : a:Verne, Jules(N) : d:1828-1905(I)x:Manuscripts(Y) : v:Fiction(I)
+2149373134 : a:Marseilles (Fictitious place)(N) : v:Fiction(I)
+2176190134 : a:Politics(N) : v:Fiction(I)
+2099325134 : a:Fantays fiction(N) : 
+2097996134 : a:Demons(N) : v:Fiction(I)
+2111017134 : a:Star wars, episode I, the phantom menace (Motion picture)(N) : 
+2111017134 : a:Star wars, episode II, attack of the clones (Motion picture)(N) : 
+2135860134 : a:Outer space exploration(N) : v:Fiction(I)
+2143112134 : a:Kirk, James T., 2233-2371 - Fiction(N) : 
+2143112134 : a:Kirk, James T., 2233-2371(N) : 
+2143112134 : a:Life on other planets - Fiction(N) : 
+2143112134 : a:Interplanetary voyages - Fiction(N) : 
+2266973134 : a:Mohters and daughters(N) : v:Fiction(I)
+2184015134 : a:European Council for Nuclear Research(N) : v:Fiction(I)
+2184015134 : a:International Space Station(N) : v:Fiction(I)
+1982032134 : a:Cromwell, Oliver(N) : d:1599-1658(I)v:Fiction(I)
+2032613134 : a:Rogue One (Motion picture)(N) : v:Miscellanea(I)v:Juvenile literature(I)
+2056103134 : a:Doom (Computer file)(N) : v:Fiction(I)
+1997798134 : a:Water supply(C)v:Fiction(I)
+2254492134 : a:Space operas (Fiction)(N) : 
+2007586134 : a:Discworld(N) : v:Fiction(I)
+2022220134 : a:Warriors(N) : v:Fiction(I)
+2233124134 : a:Collections &amp; Anthologies(N) : v:Science Fiction(I)
+2011075134 : a:Young Adult Literature(N) : 
+2164728134 : a:Spock(N) : c:Mr(I)v:Fiction(I)
+2021160134 : a:Hitler, Adolf(N) : d:1889-1945(I)v:Juvenile fiction(I)
+2041896134 : a:Superhero comic books, strips, etc(N) : 
+2063859134 : a:Titanic (Steamship)(N) : v:Fiction(I)
+1983848134 : a:Revolutionaires(N) : v:Fiction(I)
+2002425134 : a:Short shoties(N) : 
+2187924134 : a:X-files (Television program)(N) : 
+2038497134 : a:Star Wars rebels (Television program)(N) : v:Juvenile fiction(I)
+2040178134 : a:Moab (Utah)(N) : v:Fiction(I)
+2117283134 : a:Thirty Years War, 1618-1648(N) : v:Fiction(I)
+2229984134 : a:Dystopian(N) : v:Fiction(I)
+1984037134 : a:Surviva(N) : v:Juvenile fiction(I)
+2019387134 : a:Star wars (Motion picture)(N) : 
+2133040134 : a:Regression (civilization)(N) : v:Fiction(I)
+2133040134 : a:Quests (expeditions)(N) : v:Fiction(I)
+1969290134 : a:Burton, Richard Francis(N) : c:Sir(I)d:1821-1890(I)v:Fiction(I)
+1969290134 : a:Swinburne, Algernon Charles(N) : d:1837-1909(I)v:Fiction(I)
+2007246134 : a:New Orleans (La)(N) : x:History(Y) : y:19th century(Y) : v:Young adult fiction(I)v:Sound recordings(I)
+2032698134 : a:Napoleon(N) : b:I(N) : c:Emperor of the French(I)d:1769-1821(I)v:Juvenile fiction(I)
+2067798134 : a:Tim travel(N) : v:Fiction(I)
+2018719134 : a:Empire strikes back (Motion picture)(N) : 
+2013133134 : a:Space warefare(N) : v:Fiction(I)
+1915236134 : a:Virgil(N) : t:Aeneis(N) : v:Juvenile fiction(I)
+1933402134 : a:Harrison, Harry(N) : d:1925-2012(I)
+2078119134 : a:Memories(N) : v:Juvenile fiction(I)
+2102598134 : a:Sciece fiction, American(N) : 
+2233512134 : a:Jack(N) : c:the Ripper(I)
+2221910134 : a:Carroll, Flynn (Fictitous character)(N) : v:Fiction(I)
+2090483134 : a:Greed(C)v:Fiction(I)
+1897515134 : a:Bombay (India)(N) : v:Fiction(I)
+2059181134 : a:Anderson, Poul(N) : d:1926-2001(I)
+2062117134 : a:Galilei, Galileo(N) : d:1564-1642(I)v:Fiction(I)
+2062117134 : a:Thirty Years War(N) : v:Fiction(I)d:17th Century(I)z:Europe(Y) : 
+1897683134 : a:Alternative history (fiction)(N) : 
+2077188134 : a:Vernier (Imaginary place)(N) : v:Fiction(I)
+2231636134 : a:Amerikaanse fiksie(N) : 
+2056318134 : a:Science fiction, Juvenile(N) : 
+1915231134 : a:Runaways(C)v:Fiction(I)
+1962293134 : a:Return of the Jedi (Motion picture)(N) : v:Adaptations(I)
+1908213134 : a:Underwater cities(N) : v:Juvenile fiction(I)
+1908213134 : a:Quests(N) : v:Juvenile fiction(I)
+2209969134 : a:Smith, S. E(N) : t:Cosmos' Gateway(N) : v:bk. 5(I)
+1927687134 : a:Epic fiction(N) : 
+1885166134 : a:Medical novels(N) : 
+1935799134 : a:Inspirational fiction(N) : 
+1863382134 : a:An Event Group Thriller (Imaginary organization)(N) : v:Fiction(I)
+1853215134 : a:Hampshire (England)(N) : v:Fiction(I)
+1876970134 : a:Montauk (N.Y.)(N) : x:History(Y) : y:20th century(Y) : v:Juvenile fiction(I)
+1853212134 : a:Torchwood(N) : 
+1878918134 : a:Actors and actresses(C)v:Fiction(I)
+2013854134 : a:Taling books for children(N) : 
+1860457134 : a:Underwater(N) : v:Fiction(I)
+1950914134 : a:Teeenage girls(N) : z:Canadian Rockies (B.C. and Alta.)(Y) : v:Fiction(I)
+1866574134 : a:Younge adult fiction(N) : 
+1971728134 : a:Egypt(Y) : x:History(Y) : y:332 B.C(N) : 
+1883430134 : a:Botany (Imaginary place)(N) : v:Fiction(I)
+1901714134 : a:Jax, Sirantha (Fictional character)(N) : v:Fiction(I)
+1840757134 : a:Oaxaca de Juárez (Mexico)(N) : v:Juvenile fiction(I)
+1844615134 : a:Electronic audiobooks(N) : 
+1816236134 : a:Star Wars Fiction(N) : 
+1969483134 : a:Books on CD(N) : 
+1819275134 : a:Prometheus (Greek deity)(N) : v:Fiction(I)
+1845069134 : a:Beverly Hills (Calif.)(N) : v:Juvenile fiction(I)
+1840577134 : a:Rossetti, Christina Georgina(N) : d:1830-1894(I)v:Fiction(I)
+1848742134 : a:Santa María (Ship)(N) : v:Juvenile fiction(I)
+1808299134 : a:Seventeen-year-old girls(N) : v:Juvenile fiction(I)
+1835546134 : a:Automata(C)v:Fiction(I)
+2147845134 : a:Human-alien encounters(Y) : z:Wales(Y) : z:Cardiff(N) : v:Fiction(I)
+2147845134 : a:Cardiff (Wales)(N) : v:Fiction(I)
+1827535134 : a:Kafka, Franz(N) : d:1883-1924(I)x:Influence(Y) : v:Fiction(I)
+1803246134 : a:Dick, Philip K(N) : v:Notebooks, sketchbooks, etc(I)
+1824899134 : a:Edison, Thomas A(N) : q:(Thomas Alva)(N) : d:1847-1931(I)v:Juvenile fiction(I)
+2096170134 : a:Atwood, Margaret(N) : d:1939-(I)
+2079091134 : a:Heinlein, Robert A(N) : q:(Robert Anson)(N) : d:1907-1988(I)
+2039371134 : a:Vance, Jack(N) : d:1916-(I)
+2272102134 : a:Extraterresterial beings(N) : v:Fiction(I)
+1781007134 : a:Science fiction graphic novel(N) : 
+2280091134 : a:Downloadable books(N) : 
+2092800134 : a:Scripps Institution of Oceanography(N) : v:Fiction(I)
+2134186134 : a:Tsutsui, Yasutaka(N) : d:1934-(I)v:Translations into English(I)
+2065302134 : a:Rivalry(N) : 
+2065302134 : a:Human extinction(N) : 
+2065302134 : a:Space ship(N) : 
+1664276134 : a:Fourth-grade girls(N) : v:Comic books, strips, etc(I)
+1929422134 : a:Asimov, Isaac(N) : d:1920-1992(I)
+2032962134 : a:United States(Y) : b:Marine Corps(N) : v:Fiction(I)
+2032962134 : a:Europa Satellite(N) : v:Fiction(I)
+1547247134 : a:Satirical fiction(N) : 
+1547247134 : a:Human nature(N) : v:Fiction(I)
+1996276134 : a:vbSpace and time(N) : v:Drama(I)
+1540429134 : a:Emshwiller, Ed(N) : 
+1540429134 : a:Emshwiller, Carol(N) : 
+1515477134 : a:Star trek (Television program)(N) : 
+2186146134 : a:Time travel (Future)(N) : v:Fiction(I)
+1971760134 : a:Teen fiction(N) : 
+1538925134 : a:Block, Francesca Lia(N) : 
+1538925134 : a:Brunhoff, Jean de(N) : d:1899-1937(I)
+1538925134 : a:Brunhoff, Laurent de(N) : d:1925-(I)
+1538925134 : a:Card, Orson Scott(N) : 
+1424795134 : a:Bradbury, Ray(N) : d:1920-(I)
+1770411134 : a:United States(Y) : b:National Aeronautics and Space Administration(N) : v:Fiction(I)
+2215384134 : a:Crime(Y) : z:Connecticut(Y) : z:Hartford(N) : v:Fiction(I)
+2077115134 : a:Sound recording(N) : 
+1392629134 : a:Le Guin, Ursula K.(N) : d:1929-(I)
+2062387134 : a:Clones and cloning(N) : v:Fiction(I)
+2248451134 : a:Comics (Graphic works)(N) : 
+1419806134 : a:Crichton, Michael(N) : d:1942-(I)v:Juvenile literature(I)
+2263647134 : a:Star trek, Voyager (Television program)(N) : v:Fiction(I)
+1304649134 : a:Anthony, Piers(N) : 
+1822957134 : a:Crilley, Mark(N) : 
+2283567134 : a:Star trek (Motion picture : 1979)(N) : 
+1856032134 : a:Voyager Project(N) : 
+1856032134 : a:Viking Mars Program(N) : 
+1856032134 : a:Outer space in literature(N) : 
+1809688134 : a:Space colonization(N) : v:Fiction(I)
+1259758134 : a:Monty Python (Comedy troupe)(N) : v:Fiction(I)
+1241457134 : a:Noah(N) : c:(Biblical figure)(I)v:Juvenile fiction(I)
+2161860134 : a:Star trek(N) : v:Fiction(I)
+2069095134 : a:Fantasy, English(N) : 
+1159207134 : a:McQuarrie, Ralph(N) : 
+2242986134 : a:Space opera(N) : 
+2031516134 : a:Interstellar voyages(N) : v:Fiction(I)
+2157367134 : a:United States(Y) : b:Department of Energy(N) : x:Research(Y) : v:Drama(I)
+2291719134 : a:Sigma Force (Imaginary organization)(N) : v:Fiction(I)
+2214105134 : a:Video recordings for the deaf and hard of hearing(N) : 
+2260583134 : a:Alien (Motion picture)(N) : 
+2157354134 : a:Video recordings for people with visual disabilites(N) : 
+1800344134 : a:Lee, Stan(N) : d:1922-2018(I)v:Film adaptations(I)
+1800344134 : a:Lieber, Larry(N) : v:Film adaptations(I)
+1800344134 : a:Kirby, Jack(N) : v:Film adaptations(I)
+1800344134 : a:Mythological films(N) : 2:lcgft(I)
+2284271134 : a:Families(Y) : z:England(Y) : z:Manchester(N) : v:Drama(I)
+2212261134 : a:Video gamers(Y) : z:Ohio(Y) : z:Columbus(N) : v:Drama(I)
+2111960134 : a:Loki(N) : c:(Norse deity)(I)v:Drama(I)
+2211824134 : a:United States(Y) : b:Air Force(N) : v:Drama(I)
+2052547134 : a:Star War films(N) : 
+2281837134 : a:DVD Video discs(N) : 
+2103450134 : a:Los Angeles (Calif.)(Y) : b:Police Department(N) : v:Drama(I)
+2242687134 : a:Ebola virus disease(Y) : z:Virginia(Y) : z:Reston(N) : 
+1964465134 : a:Chicago (Ill)(N) : v:Drama(I)
+1787546134 : a:Troi, Deanna(N) : d:2336-(I)v:Drama(I)
+2181117134 : a:Lost and found possessions(C)v:Juvenile films(I)
+2132047134 : a:Paranormal television programs(N) : 
+2199080134 : a:Video recordings with French language options(N) : 
+2199080134 : a:Video recordings with Spanish language options(N) : 
+2206015134 : a:Roddenberry, Gene(N) : v:Film adaptations(I)
+2266347134 : a:DVD-Video discs(Y) : y:2011(N) : 
+1404132134 : a:French language materials(C)
+2161650134 : a:Los Angeles (Calif.)(Y) : y:Siglo XXI(N) : v:Teatro(I)
+2265018134 : a:Logan, Pike(N) : v:Fiction(I)
+2204264134 : a:Brinkley, William(N) : d:1917-1993(I)v:Television adaptations(I)
+2260614134 : a:McCoy, Leonard(N) : v:Drama(I)
+2156117134 : a:Roswell Incident, Roswell, NM, 1947(N) : v:Drama(I)
+2205994134 : a:United States(Y) : b:Central Intelligence Agency(N) : x:Officials and employees(Y) : v:Drama(I)
+2250579134 : a:Horror comics(N) : 
+2250579134 : a:Paranormal comics(N) : 
+2183131134 : a:Lovecraft, H. P(N) : q:(Howard Phillips)(N) : d:1890-1937(I)v:Film adaptations(I)
+2189846134 : a:Caidin, Martin(N) : d:1927-1997(I)v:Television adaptations(I)
+2205007134 : a:Englehart, Steve(N) : v:Film adaptations(I)
+2169932134 : a:Survival films(N) : 2:lcgft(I)
+2159413134 : a:Vineland (N.J.)(N) : v:Fiction(I)
+2075554134 : a:Arthur(N) : c:King(I)v:Drama(I)
+2023012134 : a:Boston (Mass)(N) : v:Drama(I)
+1530878134 : a:Atlantis(N) : v:Drama(I)
+2225892134 : a:Video, Japanese(N) : 
+2280731134 : a:DC Comics, Inc(N) : x:Characters(Y) : v:Juvenile literature(I)
+2181808134 : a:Israel(Y) : b:Mosad le-modiʻin ṿe-tafḳidim meyuḥadim(N) : v:Fiction(I)
+2247690134 : a:Boulle, Pierre(N) : d:1912-1994(I)v:Film adaptations(I)
+1919907134 : a:Kennedy, John F(N) : q:(John Fitzgerald)(N) : d:1917-1963(I)x:Assassination(Y) : v:Fiction(I)
+2101852134 : a:Area 51 (Nev)(N) : v:Drama(I)
+1900604134 : a:Star Wars, the clone wars (Motion picture)(N) : v:Television adaptations(I)
+1757084134 : a:Vampire television programs(N) : 
+1547362134 : a:Ditko, Steve(N) : v:Film adaptations(I)
+1899615134 : a:Matrix (Motion picture)(N) : 
+1899615134 : a:Matrix reloaded (Motion picture)(N) : 
+1899615134 : a:Matrix revolutions (Motion picture)(N) : 
+1438142134 : a:Ra (Egyptian deity)(N) : v:Drama(I)
+1264969134 : a:Finney, Jack(N) : v:Film and video adaptations(I)
+1655966134 : a:Motion picture sequels(N) : 
+2009666134 : a:Young adult nonfiction(N) : 
+2276905134 : a:Speculative fiction, Chinese(N) : x:Translations into English(Y) : 
+2135693134 : a:Andreas, Dewey(N) : v:Fiction(I)
+2125443134 : a:WALL-E (Motion picture)(N) : v:Comic books, strips, etc(I)v:Juvenile fiction(I)
+2088860134 : a:Stanford University(N) : x:Students(Y) : v:Fiction(I)
+1946735134 : a:United States(Y) : b:Office of Naval Intelligence(N) : v:Drama(I)
+1953569134 : a:Lu, Marie(N) : d:1984-(I)v:Adaptations(I)v:Juvenile fiction(I)
+2026331134 : a:Tevis, Walter S(N) : v:Film adaptations(I)
+2120323134 : a:Scott, Montgomery(N) : d:2222-(I)v:Drama(I)
+1865117134 : a:Wong, David(N) : d:1975 January 10-(I)v:Film adaptations(I)
+1837836134 : a:United States(Y) : b:Secret Service(N) : v:Drama(I)
+1790712134 : a:Lore, Pittacus(N) : v:Film adaptations(I)
+1759936134 : a:United States(Y) : b:Drug Enforcement Administration(N) : v:Fiction(I)
+1759936134 : a:Narcotics, Control of(N) : v:Fiction(I)
+1577187134 : a:Los Angeles (Calif)(N) : v:Drama(I)
+1527223134 : a:United States(Y) : b:Bureau of Alcohol, Tobacco, and Firearms(N) : v:Drama(I)
+1425413134 : a:Shirow, Masamune(N) : v:Film and video adaptations(I)
+1865073134 : a:Casablanca (Motion picture)(N) : v:Parodies, imitations, etc(I)
+1908347134 : a:Ciencia(N) : x:Experimentos(N) : v:Drama(I)2:bidex(I)
+1569444134 : a:Matheson, Richard(N) : d:1926-(I)v:Film and video adaptations(I)
+2109156134 : a:Digital art(N) : x:Technique(Y) : v:Periodicals(I)
+2222112134 : a:Humorous comics(N) : 
+2245910134 : a:Detective and mystery comics(N) : 
+2250666134 : a:Apocalypse(N) : v:Comic books, strips, etc(I)
+2145975134 : a:Manga(N) : 
+2185496134 : a:Graphic books(N) : 
+2175062134 : a:Guardians of the Galaxy (Motion picture)(N) : 
+2041738134 : a:Dark comedy films(N) : 2:lcgft(I)
+2024399134 : a:Hegland, Jean(N) : v:Film adaptations(I)
+1968966134 : a:United States(Y) : b:Office of Homeland Security(N) : v:Drama(I)
+1932264134 : a:Center for Disease Control(N) : v:Drama(I)
+1987180134 : a:Isayama, Hajime(N) : d:1986-(I)v:Television adaptations(I)
+1922261134 : a:Herbert, Frank(N) : t:Dune(N) : x:Film adaptations(Y) : 
+1922261134 : a:Jodorowsky, Alejandro(N) : v:Interviews(I)
+1872216134 : a:Howard, Robert E(N) : q:(Robert Ervin)(N) : d:1906-1936(I)v:Film adaptations(I)
+1380346134 : a:Issledovanie(N) : a:Kosmosa(N) : a:Drama(Y) : 
+1969412134 : a:Fox, Gardner F(N) : q:(Gardner Francis)(N) : d:1911-1986(I)v:Film adaptations(I)
+1969412134 : a:Lampert, Harry(N) : v:Film adaptations(I)
+1870983134 : a:Haunted house(N) : v:Comic books, strips, etc(I)v:Juvenile fiction(I)
+1844988134 : a:Children's Electronic books(N) : 
+1787516134 : a:Star trek IV, the voyage home (Motion picture)(N) : 
+1865602134 : a:Women domestics(N) : v:Drama(I)
+1810468134 : a:Seres extraterrestres(N) : v:Teatro(I)2:bidex(I)
+1839571134 : a:Ghosts plays(N) : 
+1561623134 : a:Abbott, Bud(N) : d:1897-1974(I)
+1561623134 : a:Costello, Lou(N) : 
+1733672134 : a:Vida en otros planetas(N) : v:Teatro(I)2:bidex(I)
+1733672134 : a:Espacio exterior(N) : v:Teatro(I)2:bidex(I)
+1592730134 : a:Police(Y) : z:Jupiter (Plantet)(N) : v:Drama(I)
+1787128134 : a:Harbou, Thea von(N) : d:1888-1954(I)v:Film adaptations(I)
+1958269134 : a:IS (Organization)(N) : v:Fiction(I)
+2279720134 : a:Thanksgiving(N) : v:Juvenile fiction(I)v:Comic books, strips, etc(I)
+2274127134 : a:Boko Haram(N) : v:Fiction(I)
+2194421134 : a:X-files (Motion picture : 1998)(N) : 
+2194421134 : a:X-files (Motion picture : 2008)(N) : 
+2119948134 : a:Heracles(N) : c:(Greek mythological character)(I)v:Comic books, strips, etc(I)
+2173854134 : a:Supervillians(N) : v:Comic books, strips, etc(I)
+2108496134 : a:Dystopian television programs(N) : 
+2067463134 : a:Bendis, Brian Michael(N) : v:Television adaptations(I)
+2131785134 : a:Injustice 2 (Video game)(N) : v:Comic books, strips, etc(I)
+2185467134 : a:Las Vegas (Nev)(N) : v:Comic books, strips, etc(I)
+1990619134 : a:King, Stephen(N) : d:1947-(I)v:Television adaptations(I)
+2035593134 : a:Homer(N) : t:Odyssey(N) : v:Adaptations(I)
+2041636134 : a:Moise, Walter(N) : v:Film adaptations(I)
+1945364134 : a:Star Wars, episode III, revenge of the Sith (Motion picture)(N) : 
+1972454134 : a:Runaways (Ficticious characters)(N) : v:Comic books, strips, etc(I)
+1917564134 : a:Imaginary wars(N) : v:Comic books strips, etc(I)
+1917530134 : a:Thor (Norse deity)(N) : v:Comic books, strips, etc(I)
+2220573134 : a:Manga, Young adult(N) : 
+1859359134 : a:Galouye, Daniel F(N) : v:Television adaptations(I)
+1859359134 : a:Welt am Draht (Television program)(N) : 
+2293190134 : a:Nolan, William F.(N) : d:1928-(I)v:Television adaptations(I)
+2293190134 : a:Johnson, George Clayton(N) : v:Television adaptations(I)
+1873170134 : a:Superhero(N) : v:Comic books, strips, etc(I)v:Fiction(I)
+2038018134 : a:Fantasy comedies (Television programs)(N) : 
+2026057134 : a:Hard call(N) : 
+1762267134 : a:Dick, Philip K(N) : t:Do androids dream of electric sheep?(N) : x:Adaptations(Y) : 
+1750652134 : a:Nuclear reactors(Y) : z:Ukraine(Y) : z:Chornobylʹ(N) : v:Drama(I)
+1821502134 : a:Batallas(N) : v:Películas cinematográficas juveniles(I)2:bidex(I)
+1821502134 : a:Bien y mal(N) : v:Películas cinematográficas juveniles(I)2:bidex(I)
+1821502134 : a:Bien(N) : y:mal(N) : v:Películas cinematográficas juveniles(I)2:bidex(I)
+1787533134 : a:Sagan, Carl(N) : d:1934-1996(I)v:Film adaptations(I)
+1491488134 : a:Seattle (Wash)(N) : v:Drama(I)
+1997880134 : a:Comic books, strips, etc(Y) : z: Japan(N) : v:Translations into English(I)
+1537971134 : a:Radio broadcasting(Y) : z:Nevada(Y) : z:Area 51(N) : v:Drama(I)
+1548201134 : a:Fantasy fiction television programs(N) : 
+2037490134 : a:Harrison, Craig(N) : v:Film and video adaptations(I)
+1532739134 : a:Muñequitos, tiras cómicas, etc(N) : z:Japón(N) : 2:bidex(I)
+1532739134 : a:Ciencia-ficción(N) : v:Libros de caricaturas, tiras, cómicas(I)2:bidex(I)
+1532739134 : a:Amor(N) : v:Libros de caricaturas, tiras, cómicas(I)2:bidex(I)
+1455400134 : a:Nimitz (Ship : CVN-68)(N) : v:Drama(I)
+1701441134 : a:Sheckley, Robert(N) : d:1928-2005(I)v:Film and video adaptations(I)
+1495353134 : a:Clarke, Arthur C(N) : q:(Arthur Charles)(N) : d:1917-2008(I)v:Film and video adaptations(I)
+2252181134 : a:Raymond, Alex(N) : d:1909-1956(I)v:Film adaptations(I)
+1953851134 : a:Television programs for people with visual disabilities(N) : 2:lcgft(I)
+2215443134 : a:Twain, Mark(N) : d:1835-1910(I)t:Prince and the pauper(N) : v:Adaptations(I)
+1999943134 : a:Christian suspense fiction(N) : 2:henn(I)
+1999943134 : a:Christian science fiction(N) : 2:henn(I)
+2260710134 : a:Doctor Who (Television program : 1963-1989)(N) : v:Juvenile literature(I)
+2260710134 : a:Doctor Who (Television program : 2005- )(N) : v:Juvenile literature(I)
+2266655134 : a:Moneymaking projects(C)v:Juvenile fiction(I)
+2255409134 : a:Jersey City (N.J.)(N) : v:Comic books, strips, etc(I)
+2207098134 : a:Marvel Comics Group(N) : x:History(Y) : 
+2193817134 : a:Obama, Barack(N) : v:Comic books, strips, etc(I)
+2193817134 : a:Biden, Joseph R(N) : v:Comic books, strips, etc(I)
+2193817134 : a:Jackson, Samuel L(N) : v:Comic books, strips, etc(I)
+2121592134 : a:Moebius(N) : d:1938-2012(I)v:Fiction(I)
+2168268134 : a:Western comics(N) : 
+2166923134 : a:War of the worlds (Radio program)(N) : v:Juvenile literature(I)
+2245163134 : a:Lost children(C)v:Fiction(I)
+2278183134 : a:Science fiction films-History and criticism(N) : 
+2163724134 : a:Social science(N) : v:Fiction(I)
+2163724134 : a:LGBTQ(N) : v:Fiction(I)
+2140162134 : a:Plants vs zombies (Game)(N) : 
+2278433134 : a:Dick, Philip(N) : x:Psychology(Y) : 
+2178471134 : a:Expanse (Television program)(N) : v:Comic books, strips, etc(I)
+2094103134 : a:Overwatch (Video game)(N) : v:Pictorial works(I)
+2284521134 : a:Church of Jediism(N) : x:Doctrines(Y) : 
+2081434134 : a:Iron Man 3 (Motion picture)(N) : 
+2081434134 : a:Incredible Hulk (Motion picture)(N) : 
+2081434134 : a:Thor (Motion picture)(N) : 
+2081434134 : a:Marvel's The Avengers (Motion picture : 2012)(N) : 
+2081434134 : a:Thor, the dark world (Motion picture)(N) : 
+2090098134 : a:Manga (Comic books, strip, etc.)(N) : 
+2072175134 : a:Mold(N) : v:Juvenile fiction(I)
+2102054134 : a:Manhattan Project (US)(N) : v:Comic books, strips, etc(I)
+2156018134 : a:El Rubius(N) : v:Comic books, strips, etc(I)
+2019120134 : a:Thriller comics(N) : 
+2035613134 : a:Starfleet Academy (Imaginary place)(N) : v:Comic books, strips, etc(I)
+1990620134 : a:Odessa (Tex)(N) : v:Drama(I)
+1982076134 : a:Great Britain(Y) : b:MI5(N) : x:Officials and employees(Y) : v:Fiction(I)
+2006623134 : a:International Security Assistance Force (Afghanistan)(N) : v:Fiction(I)
+2006623134 : a:Taliban(N) : v:Fiction(I)
+2006623134 : a:Urban warfare(Y) : z:Afghanistan.{OCLCbr#7F}(N) : v:Fiction(I)
+2043414134 : a:Science fiction, South African(N) : 
+2044010134 : a:Milwaukee (Wis)(N) : v:Comic books, strips, etc(I)v:Juvenile fiction(I)
+2044010134 : a:Wisconsin(Y) : z:Milwaukee(N) : 
+2031329134 : a:Smithsonian Institution(N) : x:Computer networks(Y) : x:Security measures(Y) : v:Fiction(I)
+2020747134 : a:Undead (Motion picture)(N) : 
+2015394134 : a:Viking women vs. the sea serpent (Motion picture)(N) : 
+1946220134 : a:Supehero comic books, strips, etc(N) : 
+1946990134 : a:Welles, Orson(N) : d:1915-1985(I)x:Criticism and interpretation(Y) : 
+2292056134 : a:Battlestar Galactica (Television program)(N) : v:Comic books, strips, etc(I)
+2019127134 : a:Superheroes comic books, strips, etc(N) : 
+1970843134 : a:Project Orion (United States. National Aeronautics and Space Administration)(N) : v:Drama(I)
+1949430134 : a:Ungerer, Tomi(N) : d:1931-(I)t:Mondmann(N) : 
+2164842134 : a:Buchman, M. L(N) : q:(Matthew Lieber)(N) : t:Night stalkers(N) : 
+1916943134 : a:Guantánamo Bay Detention Camp(N) : v:Fiction(I)
+1919710134 : a:Computer animation television programs(N) : 2:lcgft(I)
+1917581134 : a:Loki (Norse deity)(N) : v:Comic books, strips, etc(I)v:Fiction(I)
+1888646134 : a:Married women(Y) : z:New Mexico(Y) : z:Los Alamos(N) : v:Fiction(I)
+1888646134 : a:Los Alamos (N.M.)(N) : v:Fiction(I)
+1862992134 : a:Kircher, Athanasius(N) : d:1602-1680(I)v:Fiction(I)
+1985808134 : a:Kirkman, Robert(N) : d:1978-(I)v:Television adaptations(I)
+1863557134 : a:Card, Orson Scott(N) : t:Ender's game(N) : 
+2054890134 : a:Materiales en Espanol(N) : 
+1900242134 : a:Kamchatskai︠a︡ oblastʹ (Russia)(N) : v:Comic books, strips, etc(I)
+1879993134 : a:Lincoln, Abraham(N) : d:1809-1865(I)x:Assassination(Y) : v:Drama(I)
+1920107134 : a:Lesbian fiction(N) : 
+2185850134 : a:United States(Y) : b:Army(Y) : b:Special Operations Aviation Regiment, 160th(N) : v:Fiction(I)
+2166329134 : a:War comic books, strips, etc(N) : 
+1880008134 : a:National Association of Guardsmen(N) : v:Drama(I)
+2046008134 : a:Eectronic books(N) : 
+1890396134 : a:College science teachers(N) : v:Fiction(I)
+1854623134 : a:Helliconia (Imaginary place)(N) : v:Fiction(I)
+1837607134 : a:Big Bang theory(N) : v:Juvenile fiction(I)
+2054609134 : a:Tom Clancy's Ghost Recon (Game)(N) : v:Fiction(I)
+1848916134 : a:Spielberg, Steven(N) : d:1946-(I)
+1922092134 : a:United States(Y) : b:Army(Y) : b:Delta Force(N) : v:Fiction(I)
+1957551134 : a:Manhattan (New York, NY)(N) : v:Comic books, strips, etc(I)
+1907043134 : a:Sindbad the Sailor (Legendary character)(N) : v:Drama(I)
+1813778134 : a:Board book(N) : 
+2083220134 : a:United States(Y) : b:Department of Defense(N) : v:Fiction(I)
+2083220134 : a:Petrovich, Daniel (FIctitious character)(N) : v:Fiction(I)
+1790177134 : a:European Organization for Nuclear Research(N) : v:Fiction(I)
+1790177134 : a:German Tibet Expedition(N) : d:(1938-1939)(I)v:Fiction(I)
+1806209134 : a:CLAMP (Mangaka group)(N) : v:Film adaptations(I)
+2152331134 : a:Parody television programs(N) : 2:lcgft(I)
+2077417134 : a:Science Fiction, Fantasy, Magic(N) : v:Juvenile fiction(I)
+1764701134 : a:Franklin, Benjamin(N) : d:1706-1790(I)v:Juvenile fiction(I)
+2038608134 : a:British(Y) : z:Austria(Y) : z:Alps, Austrian(N) : v:Fiction(I)
+1651857134 : a:Television programs for children(N) : 
+1740792134 : a:Foreign videos(N) : 2:local(I)
+1659481134 : a:Hindi language materials(C)v:Drama(I)
+1867570134 : a:Guibert, Emmanuel(N) : v:Translations into English(I)
+2261315134 : a:Young adult fiction, Japanese(N) : 
+2072332134 : a:ecomic(N) : 
+1740422134 : a:Singing cowboy films(N) : 
+1650031134 : a:Jian zhu gong ren(N) : a:Zhongguo(N) : a:Dian ying(N) : 
+1724845134 : a:Torchwood (Television program)(N) : 
+1648716134 : a:Kim, Jong-Il(N) : v:Fiction(I)
+1553602134 : a:Takaya, Yoshiki(N) : v:Film and video adaptations(I)
+1977389134 : a:Evideo Hoopla(N) : 
+1562805134 : a:Tsuburaya, Eiji(N) : d:1901-1970(I)
+1743411134 : a:Hecht, Ben(N) : d:1893-1964(I)v:Film and video adaptations(I)
+1494642134 : a:Lowry, Lois(N) : t:Giver(N) : v:Juvenile literature(I)
+1504804134 : a:Gotham City (Imaginary place)(N) : v:Comic books, strips, etc(I)v:Fiction(I)
+1596000134 : a:Special forces (Military science)(Y) : z:Russia (Federation)(Y) : z:Chechn︠i︡a(N) : v:Fiction(I)
+1596000134 : a:Chechn︠i︡a (Russia)(N) : x:History(Y) : y:Civil War, 1994-1996(N) : v:Fiction(I)
+1502676134 : a:Irritation(N) : v:Drama(I)
+2226067134 : a:Science Special Search Party(N) : v:Fiction(I)
+1518133134 : a:Television programs for youth(N) : 
+1543786134 : a:Motion pictures, South Korean(N) : 
+1483544134 : a:Hurricanes(Y) : z:Florida(Y) : z:Homestead(N) : v:Drama(I)
+1721494134 : a:Motion picture serials(N) : 
+1434367134 : a:Japanese language materials(C)
+1478264134 : a:Adams, Douglas(N) : d:1952-2001(I)t:Hitch-hiker's guide to the galaxy(N) : 
+1450087134 : a:Twilight zone (Television program)(N) : 
+1749339134 : a:Lucasfilm, Ltd(N) : 
+1561652134 : a:U.S. Space Camp (Huntsville, Ala.)(N) : v:Drama(I)
+1594482134 : a:British Library(N) : v:Drama(I)
+1385764134 : a:Burns, Bob(N) : d:1935-(I)
+1478271134 : a:Doctor Who (Television program)(N) : 
+1408275134 : a:Bradbury, Ray(N) : d:1920-(I)t:Fahrenheit 451(N) : 
+1499685134 : a:Octopus(N) : v:Drama(I)
+1330837134 : a:Child soliders(N) : v:Fiction(I)
+1676250134 : a:Vonnegut, Kurt(N) : x:Criticism and interpretation(Y) : 
+1477157134 : a:Hamilton, Peter F(N) : v:Handbooks, manuals, etc(I)
+1304157134 : a:Wells, H G(N) : q:(Herbert George)(N) : d:1866-1946(I)t:War of the worlds(N) : 
+1454253134 : a:Vonnegut, Kurt(N) : t:Slaughterhouse-five(N) : 
+1288626134 : a:Huxley, Aldous(N) : d:1894-1963(I)t:Brave new world(N) : x:Examinations(Y) : v:Study guides(I)
+1359051134 : a:Hubbard, L. Ron(N) : q:(La Fayette Ron)(N) : d:1911-1986(I)v:Film and video adaptations(I)
+1378014134 : a:Plan 9 from outer space (Motion picture)(N) : 
+2252151134 : a:Wood, Edward D.(N) : c:Jr(I)q:(Edward Davis)(N) : d:1924-1978(I)
+1455920134 : a:Forest, Jean Claude(N) : v:Film and video adaptations(I)
+1051251134 : a:African National Congress(N) : v:Fiction(I)
+1916848134 : a:May, Julian(N) : t:Saga of Pliocene exile(N) : v:Dictionaries, indexes, etc(I)
+2254059134 : a:Valparaíso (Chile)(N) : v:Fiction(I)
+2205878134 : a:Suspense fiction, Chinese(N) : 
+1895715134 : a:Closed captioned(N) : 
+1473951134 : a:Cold cases (Criminal investigation)(Y) : z:Tennessee(Y) : z:Knoxville(N) : v:Fiction(I)
+2077901134 : a:Forensic Instincts (Imaginary organization)(N) : v:Fiction(I)
+2278544134 : a:College teachers(Y) : z:Florida(Y) : z:Gainesville(N) : v:Fiction(I)
+2235544134 : a:Women magicians(N) : v:Fiction(I)
+2059490134 : a:Hereward(N) : d:active 1071(I)v:Fiction(I)
+2276682134 : a:Ludlum, Robert(N) : d:1927-2001(I)v:Television adaptations(I)
+2225890134 : a:FBI Academy(N) : b:Behavioral Science Unit(N) : v:Drama(I)
+2212263134 : a:Rowling, J K(N) : t:Harry Potter and the Order of the Phoenix(N) : v:Film adaptations(I)
+1944792134 : a:Santa Clara Valley (Santa Clara County, Calif)(N) : v:Drama(I)
+1805860134 : a:Miami (Fla)(N) : v:Drama(I)
+2214107134 : a:Läckberg, Camilla(N) : d:1974-(I)v:Television adaptations(I)
+2214108134 : a:Murder(Y) : z:Sweden(Y) : z:Tanum(N) : v:Drama(I)
+2081224134 : a:Santa Clara River Valley (Calif)(N) : v:Drama(I)
+2044173134 : a:Political films(N) : 2:lcgft(I)
+2003743134 : a:Bohr, Niels(N) : d:1885-1962(I)
+2003743134 : a:Heisenberg, Werner(N) : d:1901-1976(I)
+2003743134 : a:Fleming, Ian(N) : d:1908-1964(I)
+1123342134 : a:Brothers of Christian Instruction of Ploërmel(N) : 
+1123342134 : a:Federazione italiana di cardiologia(N) : 
+1123342134 : a:First Investors Corporation Ltd(N) : 
+1123342134 : a:Fogarty International Center(N) : 
+1123342134 : a:Forest Industries Council of Papua New Guinea(N) : 
+1123342134 : a:Foundation for Intellectual Collaboration (Russia)(N) : 
+1123342134 : a:Fundación Instituto de la Comunicación de Murcia(N) : 
+1123342134 : a:Fusion Information Center(N) : 
+1123342134 : a:John E. Fogarty International Center for Advanced Study in the Health Sciences(N) : 
+1123342134 : a:United States(Y) : b:Federal Information Center(N) : 
+1123342134 : a:Vanuatu(Y) : b:Foreign Investment Committee(N) : 
+2167521134 : a:Social Science(N) : 
+2167521134 : a:Gay &amp; Lesbian Fiction(N) : 
+2275093134 : a:Science ficton(N) : 
+2041715134 : a:Jennings, Maureen(N) : v:Television adaptations(I)
+2267139134 : a:Madden, Johnathon(N) : 
+2267139134 : a:Madden, Kevin(N) : 
+1850283134 : a:Kim, Il-sŏng(N) : d:1912-1994(I)x:Assassination attempts(Y) : v:Drama(I)
+1683316134 : a:Domestic comedy films(N) : 
+1593800134 : a:Journalism films(N) : 
+1576347134 : a:Musée du Louvre(N) : v:Juvenile films(I)

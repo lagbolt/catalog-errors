@@ -1,0 +1,28 @@
+2299752134 : 610 : 20 : a:Ku Klux Klan (19th century)(N) : 
+2287937134 : 650 :  0 : a:Medical examiners(N) : z:Georgia(Y) : z:Atlanta(Y) : v:Fiction(I)
+2277497134 : 610 : 10 : a:United States(Y) : b:Coast Guard(N) : v:Fiction(I)
+2266765134 : 630 : 00 : a:Frozen (Motion picture : 2013 : Buck and Lee)(N) : v:Juvenile fiction(I)
+2272273134 : 600 : 10 : a:Crosswhite, Tracy(N) : v:Fiction(I)
+2269087134 : 600 : 10 : a:Walder, Tracy(N) : 
+2269087134 : 610 : 10 : a:United States(Y) : b:Central Intelligence Agency(N) : x:Officials and employees(Y) : v:Biography(I)
+2269087134 : 610 : 10 : a:United States(Y) : b:Federal Bureau of Investigation(N) : x:Officials and employees(Y) : v:Biography(I)
+2143654134 : 650 :  0 : a:Dreamweaver (Computer file)(N) : 
+2251412134 : 600 : 10 : a:Cefalu, Vincent A(N) : 
+2251412134 : 610 : 10 : a:United States(Y) : b:Bureau of Alcohol, Tobacco, and Firearms(N) : x:Officials and employees(Y) : v:Biography(I)
+2201112134 : 650 :  0 : a:Secrets(C)v:Juvenile fiction(I)
+2113242134 : 600 : 10 : a:Garza, Erica(N) : 
+2155971134 : 600 : 10 : a:Turner, Tina(N) : 
+2105949134 : 600 : 10 : a:De La Garza, Dianna(N) : 
+2240990134 : 600 : 10 : a:Aten, Jamie D(N) : x:Health(Y) : 
+2155936134 : 651 :  0 : a:Harlan County (Ky.)(N) : v:Fiction(I)
+2082159134 : 651 :  0 : a:United States(Y) : x:History(Y) : y:Colonial period, ca 1600-1775(N) : v:Fiction(I)
+2081434134 : 650 :  0 : a:Iron Man (Motion picture)(N) : 
+2081434134 : 650 :  0 : a:Iron Man 2 (Motion picture)(N) : 
+2081434134 : 650 :  0 : a:Iron Man 3 (Motion picture)(N) : 
+2081434134 : 650 :  0 : a:Incredible Hulk (Motion picture)(N) : 
+2081434134 : 650 :  0 : a:Thor (Motion picture)(N) : 
+2081434134 : 650 :  0 : a:Captain America, the first avenger (Motion picture)(N) : 
+2081434134 : 650 :  0 : a:Marvel's The Avengers (Motion picture : 2012)(N) : 
+2081434134 : 650 :  0 : a:Thor, the dark world (Motion picture)(N) : 
+2019643134 : 611 : 20 : a:UFC (Mixed martial arts event)(N) : v:Juvenile literature(I)
+2092879134 : 650 :  0 : a:Moneymaking projects(C)v:Juvenile fiction(I)
