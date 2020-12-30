@@ -1,18 +1,23 @@
 #
-#    Scan a MARC file or database table and look up the author and title in
-#    various external sources to check for a missing 490 (series) field.
+#    Scan a MARC file or database table and use the author and title to retrieve series
+#    information from various external sources to check for a missing 490 (series) field.
 #
-#    License:  CC BY 3.0 US, https://creativecommons.org/licenses/by/3.0/us/
+#    Usage:  python seriescheck.py --inputfile <MARC input file> [ --libcode library-code]
+#       or:  python seriescheck.py --inputtable <name of database table>  [ --libcode library-code]
+#
+#    The database table should have columns for bibnumber, tag, indicators, and tagData.
+#    tagData is all the subfields glommed together.  You can get more information from
+#    the mydb.py file.
+#
+#    The --libcode argument is necessary in order to retrieve series data from Novelist.
+#    DO NOT include this unless you are a Bibliocommons library using your own
+#    library code.
+#
+#    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 #    Graeme Williams
 #    carryonwilliams@gmail.com
 #
-#    Usage:  seriescheck --inputfile <MARC input file>
-#       or:  seriescheck --inputtable <name of database table>
-#
-#    The database table should have columns for bibnumber, tag, indicators, and tagData.
-#    tagData is all the subfields glommed together.  You can get more information from
-#    the mydb.py file.import requests
 
 from collections import Counter
 import argparse
@@ -22,10 +27,9 @@ from lib import mydb, mymarc, opac, goodreads
 
 parser = argparse.ArgumentParser(description=
     """Specify either an input file or a MySQL input table.
-       (The database name is hard-coded.  Sorry.)
-       
-       --libcode is optional but is needed to check Novelist.
-       If it's not included, Novelist checking will be skipped.
+        (The database name is hard-coded.  Sorry.)
+        --libcode is optional but is needed to check Novelist.
+        If it's not included, Novelist checking will be skipped.
     """
     )
 parser.add_argument("--libcode", "-lc", required=False)
@@ -35,6 +39,7 @@ group.add_argument("--inputtable", "-it")
 
 args = parser.parse_args()
 
+therecordgenerator = mymarc.recordgenerator(args.inputfile, args.inputtable)
 check_cnx = mydb.Connection(schema="isfdb")
 check_table = mydb.Table(check_cnx, "author_title_series_name")
 
@@ -48,7 +53,7 @@ limit_counter = 0
 # For each MARC record in the file or database table:
 #   - collect authors from 100, 700;
 #   - run each check in the checkList
-for bibnum, theRecord in mymarc.recordgenerator(args.inputfile, args.inputtable):
+for bibnum, theRecord in therecordgenerator:
     if (limit_counter := limit_counter+1) > 10000:
         print("Hit limit from input table!")
         break

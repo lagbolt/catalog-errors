@@ -1,3 +1,20 @@
+#
+#    Scan a Library of Congress subject heading file and extract the subject headings.
+#    The input and output filenames are fixed.
+#
+#    The input file is the unzipped version of the file
+#    "LC Subject Headings (LCSH) \*NEW Pilot\* (MADS/RDF only)"
+#    downloaded from https://id.loc.gov/download/.
+#
+#    The workflow of which this is a part is described in the accompanying README.md file.
+#
+#    Usage:  python scan-madsrdf-json.py
+# 
+#    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+#    Graeme Williams
+#    carryonwilliams@gmail.com
+# 
 import json
 
 outf = open("lcsh-madsrdf-out.txt", 'w', encoding='utf-8')

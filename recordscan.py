@@ -1,26 +1,20 @@
 #
-#    Scan a MARC file or database table and count records that match specific tests
+#    Scan a MARC file or database table and check for records that match specific tests
 #    Check for possible duplicate author names
 #
-#    License:  CC BY 3.0 US, https://creativecommons.org/licenses/by/3.0/us/
-#
-#    Graeme Williams
-#    carryonwilliams@gmail.com
-#
-#    Usage:  recordscan --inputfile <MARC input file>  [ --list <filename> ] [ --summary <filename> ]
-#       or:  recordscan --inputtable <database table> [ --list <filename> ] [ --summary <filename> ]
+#    Usage:  python recordscan.py --inputfile <MARC input file>
+#       or:  python recordscan.py --inputtable <database table>
 #
 #    The database table should have columns for bibnumber, tag, indicators, and tagData.
 #    tagData is all the subfields glommed together.  You can get more information from
 #    the mydb.py file.
 #
-#    There are two optional arguments to specify output files:  list and summary.  A list of problematic
-#    6xx fields is written to the list file, with the limitation that a given subject heading is only
-#    written out once.  A summary of problematic headings with a count is written to the summary file.
-#
-#    The default for either file is to write to the console / terminal where you're running the program.
-#
 # Known issues:  I really should check headings against the LC Name Authority File.
+#
+#    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+#    Graeme Williams
+#    carryonwilliams@gmail.com
 #
 
 from collections import Counter

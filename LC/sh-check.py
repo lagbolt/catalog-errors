@@ -1,3 +1,34 @@
+#
+#    Scan a MARC file or database table and check subject headings in 6xx fields
+#    against subject heading lists downloaded from the Library of Congress.
+#
+#    Usage:  python sh-check.py --inputfile <MARC input file>  [ --list <filename> ] [ --summary <filename> ]
+#       or:  python sh-check.py --inputtable <database table> [ --list <filename> ] [ --summary <filename> ]
+#
+#    The database table should have columns for bibnumber, tag, indicators, and tagData.
+#    tagData is all the subfields glommed together.  You can get more information from
+#    the mydb.py file.
+#
+#    The --list argument specifies a file for a listing of the first occurrence of each 'bad' (= unrecognized)
+#    heading.  The default is to write the listing to the terminal.  If you want the listing to include *every*
+#    occurrence, edit the code below to remove 'errorSet'
+#
+#    The -summary argument specifies a file for a summary giving each 'bad' (= unrecognized) heading and a
+#    count.  The default is to write the summary to the terminal
+#
+#    Known issues:
+#
+#    I should check headings against the Library of Congress Name Authority File.
+#
+#    The way I process the downloaded subject headings loses the distinction between $a terms and
+#    $x, $y and $z subdivisions.
+#
+#    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+#    Graeme Williams
+#    carryonwilliams@gmail.com
+# 
+
 from collections import Counter
 import argparse
 import contextlib
