@@ -5,29 +5,6 @@ import sys
 
 from lib import mymarc
 
-########
-
-# Load phrase list for LC subject headings
-
-########
-
-phraseSet = set()
-with open("lcsh-phrases.txt", encoding="utf-8") as phraseFile:
-    for phrase in phraseFile:
-        phraseSet.add(phrase.rstrip())
-
-########
-
-# Load entries from LC children's headings and pull out phrases
-
-########
-
-childrensPhraseSet = set()
-with open("lcsj-entries.txt", encoding="utf-8") as childrensFile:
-    for entry in childrensFile:
-        for phrase in entry.strip().split("--"):
-            childrensPhraseSet.add(phrase)
-
 #######
 
 # Read MARC from database or file and pull out LC subject fields
@@ -73,6 +50,23 @@ def main():
 
     listfile = args.list if args.list else sys.stdout
     summaryfile = args.summary if args.summary else sys.stdout
+
+    # Load phrase list for LC subject headings
+
+    phraseSet = set()
+    with open("lcsh-phrases.txt", encoding="utf-8") as phraseFile:
+        for phrase in phraseFile:
+            phraseSet.add(phrase.rstrip())
+
+    # Load entries from LC children's headings and pull out phrases
+
+    childrensPhraseSet = set()
+    with open("lcsj-entries.txt", encoding="utf-8") as childrensFile:
+        for entry in childrensFile:
+            for phrase in entry.strip().split("--"):
+                childrensPhraseSet.add(phrase)
+
+    # Now that we have the LC data loaded, scan the input file / table
 
     errorCounter = Counter()
     errorSet = set()             # just so we don't print a given bad heading twice
