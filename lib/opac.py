@@ -1,4 +1,12 @@
-import requests
+# 
+#    Version:  0.1.0  1/1/21
+#
+#    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+#    Graeme Williams
+#    carryonwilliams@gmail.com
+#
+
 import re
 import time
 
@@ -87,7 +95,7 @@ def searchgenerator(session, query, requestdelay = DEFAULTDELAY, startpage = 1, 
             bibset.add(bibnumber)
             if debug:
                 print(f"Found {bibnumber} on page {page}")
-            yield m   # a match object
+            yield m   # a match object with one value
 
         if debug:
             print(f"Dropping to section two on page {page}")
@@ -97,13 +105,14 @@ def searchgenerator(session, query, requestdelay = DEFAULTDELAY, startpage = 1, 
             if bibnumber in bibset:
                 continue
             bibset.add(bibnumber)
-            yield m   # a match object
+            yield m   # a match object with two values
 
         if checkiflastpage(rt, True):
             return
 
         page += 1
 
+# This generator yields (i.e., generates) MARC fields one at a time
 def getmarcgenerator(session, libcode, bibnumber, requestdelay=DEFAULTDELAY):
 
     time.sleep(requestdelay)

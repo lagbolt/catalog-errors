@@ -1,9 +1,18 @@
+# 
+#    Version:  0.1.0  1/1/21
+# 
+#    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+#    Graeme Williams
+#    carryonwilliams@gmail.com
+#
+
 import pymarc
 
-from lib import mydb
+from . import mydb   # for recordgenerator wrapper
 
 #####  Handling names from 100 and 700 fields  #####
-
+#
 # Author names are stored as a tuple, either ( name ), ( name, birthdate ) or ( name, birthdate, deathdate ).
 # We use this format instead of, e.g.,  ( name, None, None ) because the latter breaks sorting of tuples
 #

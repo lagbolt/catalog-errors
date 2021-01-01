@@ -7,11 +7,13 @@
 #
 #    The database table should have columns for bibnumber, tag, indicators, and tagData.
 #    tagData is all the subfields glommed together.  You can get more information from
-#    the mydb.py file.
+#    the mydb.py file in the lib folder.
 #
 #    The --libcode argument is necessary in order to retrieve series data from Novelist.
 #    DO NOT include this unless you are a Bibliocommons library using your own
 #    library code.
+# 
+#    Version:  0.1.0  1/1/21
 #
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #

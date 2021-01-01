@@ -8,8 +8,8 @@
 #    The database table should have columns for bibnumber, tag, indicators, and tagData.
 #    tagData is all the subfields glommed together.  You can get more information from
 #    the mydb.py file.
-#
-# Known issues:  I really should check headings against the LC Name Authority File.
+# 
+#    Version:  0.1.0  1/1/21
 #
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #

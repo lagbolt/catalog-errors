@@ -6,11 +6,7 @@ Btw, if anything isn't clear, send me email.
 
 ## Step 0
 
-You should arrange to have the lib folder from this repository somewhere in Python's library search path (e.g., by adding the repo folder to PYTHONPATH).  At a minimum, you can type:
-```
-set PYTHONPATH=%PYTHONPATH%;..
-```
-or the Unix equivalent before you run any of the applications below
+There is -- or should be -- a symbolic link from this folder to the lib folder in the repo.  Make sure it's there.
 
 ## Step 1
 

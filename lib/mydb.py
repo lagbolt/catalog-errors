@@ -1,3 +1,12 @@
+# 
+#    Version:  0.1.0  1/1/21
+# 
+#    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+#    Graeme Williams
+#    carryonwilliams@gmail.com
+#
+
 import os
 import itertools
 from pymarc import Record, Field

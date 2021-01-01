@@ -23,6 +23,8 @@
 #    The way I process the downloaded subject headings loses the distinction between $a terms and
 #    $x, $y and $z subdivisions.
 #
+#    Version:  0.1.0  1/1/21
+#
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 #    Graeme Williams

@@ -9,6 +9,8 @@
 #
 #    Usage:  python build-lists.py
 #
+#    Version:  0.1.0  1/1/21
+#
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 #    Graeme Williams

@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ## The lib folder
 
-This contains a number of libraries used by the console applications.  The console applications in this folder will find it automatically, but you'll need some configuration for the applications inside the LC folder.
+This contains a number of libraries used by the console applications.  The console applications in this folder will find it automatically.  The applications inside the LC folder will find it because of the symbolic link inside that folder.
 
 ## A note about the console applications
 
