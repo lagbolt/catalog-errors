@@ -36,6 +36,6 @@ with open("lcsh-words.txt", 'w', encoding="utf-8") as wordfile:
     for word in sorted(wordset):
         print(word, file=wordfile)
 
-with open("lcsh-phrases.txt", 'w', encoding="utf-8") as phrasefile:
+with open("lcsh-subject-terms.txt", 'w', encoding="utf-8") as phrasefile:
     for phrase in sorted(phraseset):
         print(phrase, file=phrasefile)

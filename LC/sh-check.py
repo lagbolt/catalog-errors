@@ -1,6 +1,6 @@
 #
 #    Scan a MARC file or database table and check subject headings in 6xx fields
-#    against subject heading lists downloaded from the Library of Congress.
+#    against subject terms extracted from an LCSH file downloaded from the Library of Congress.
 #
 #    Usage:  python sh-check.py --inputfile <MARC input file>  [ --list <filename> ] [ --summary <filename> ]
 #       or:  python sh-check.py --inputtable <database table> [ --list <filename> ] [ --summary <filename> ]
@@ -86,18 +86,18 @@ def main():
 
     # Load phrase list for LC subject headings
 
-    phraseSet = set()
-    with open("lcsh-phrases.txt", encoding="utf-8") as phraseFile:
+    subjectTermsSet = set()
+    with open("lcsh-subject-terms.txt", encoding="utf-8") as phraseFile:
         for phrase in phraseFile:
-            phraseSet.add(phrase.rstrip())
+            subjectTermsSet.add(phrase.rstrip())
 
     # Load entries from LC children's headings and pull out phrases
 
-    childrensPhraseSet = set()
+    childrenstermsSet = set()
     with open("lcsj-entries.txt", encoding="utf-8") as childrensFile:
         for entry in childrensFile:
             for phrase in entry.strip().split("--"):
-                childrensPhraseSet.add(phrase)
+                childrenstermsSet.add(phrase)
 
     # Now that we have the LC data loaded, scan the input file / table
 
@@ -124,10 +124,11 @@ def main():
                     printFlag = False        # forgive earlier errors (presumably name)
                 elif subfieldcode in ['c', 'v', '2']:
                     printString += "(I) : "     # I for ignore
-                elif subfieldvalue in phraseSet:
+                elif subfieldvalue in subjectTermsSet:
                     printString += "(Y) : "  # Y for yes, found
-                elif subfieldvalue in childrensPhraseSet:
+                elif subfieldvalue in childrenstermsSet:
                     printString += "(C) : "     # C for children's subject heading
+                    # this is an error because the second indicator = 1
                     printFlag = printFlag if subfieldvalue in errorSet else True
                     errorSet.add(subfieldvalue)
                     errorCounter[subfieldvalue+"(C)"] += 1

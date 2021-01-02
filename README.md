@@ -31,6 +31,8 @@ pip install -r requirements.txt
 
 This contains a number of libraries used by the console applications.  The console applications in this folder will find it automatically.  The applications inside the LC folder will find it because of the symbolic link inside that folder.
 
+IF YOU DOWNLOAD A ZIP OF THIS REPOSITORY ON WINDOWS rather than cloning it, the 'lib' symbolic link in the LC folder will be broken and you will have to fix it.
+
 ## A note about the console applications
 
 You run the console applications using Python, e.g.:

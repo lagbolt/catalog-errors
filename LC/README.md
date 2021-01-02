@@ -6,7 +6,9 @@ Btw, if anything isn't clear, send me email.
 
 ## Step 0
 
-There is -- or should be -- a symbolic link from this folder to the lib folder in the repo.  Make sure it's there.
+There is a symbolic link from this folder to the lib folder in the repo.
+
+IF YOU DOWNLOAD A ZIP OF THIS REPOSITORY ON WINDOWS rather than cloning it, the 'lib' symbolic link in the LC folder will be broken and you will have to fix it.
 
 ## Step 1
 
@@ -18,19 +20,19 @@ Run scan-madsrdf-json.py
 
 This will read lcsh.madsrdf.ndjson and write subject headings into the file lcsh-madsrdf-out.txt
 
-You'll see that each line of the file includes the line number from the input file, the LoC reference number, and the subject heading.
+You'll see that each line of the file includes the line number from the LoC input file, the LoC reference number, and the subject heading.
 
 ## Step 3
 
 Run build-lists.py
 
-This will read lcsh-madsrdf-out.txt and write out two files, lcsh-phrases.txt and lcsh-words.txt, which I will explain by example ...
+This will read lcsh-madsrdf-out.txt and write out two files, lcsh-subject-terms.txt and lcsh-words.txt, which I will explain by example ...
 
 Suppose one line of the input is:
 ```
 #NNN shNNNNNN Battles, Boring--Marsupials, Australian
 ```
-then "Battles, Boring" and "Marsupials, Australian" would be added to the lcsh-phrases.txt file, and each word would be added to the words file.
+then "Battles, Boring" and "Marsupials, Australian" would be added to the lcsh-subject-terms.txt file, and each word would be added to the words file.
 
 (The words file is not actually used in this workflow.)
 
@@ -42,9 +44,9 @@ This program can read either from a MySQL database table or a MARC file.  If you
 
 The table can be specified either by name or by schema and name (e.g., "schema_name.table_name").
 
-The program will check the subject headings in the 6xx fields of the input with the LoC subject headings and list fields where there is a discrepancy.
+The program will check the subject headings in the 6xx fields of the input against the LoC subject terms in the lcsh-subject-terms.txt file print out fields where there is a discrepancy.
 
-The program will list each bad heading once, and also provide a summary with counts.  If you want every occurrence of a bad heading listed, you'll need to edit the code (specifically the errorSet variable).
+The program will list each 'bad' heading once, and also provide a summary with counts.  If you want every occurrence of a bad heading listed, you'll need to edit the code (specifically the errorSet variable).
 
 The output is a bit idiosyncratic.  A code is appended to each subfield, as follows:
     Y - found in the LCSH
