@@ -16,9 +16,7 @@ if os.environ.get('MU') or os.environ.get('USERDOMAIN') == 'DESKTOP-UPR7L5U':
 else:
     import MySQLdb
 
-# Password for pythonanywhere MySQL instance
-PA_PASSWORD = "it really isn't this"                  # reminder = sweet factors
-LOCAL_PASSWORD = "it isn't this either"               # reminder = anu
+from .secrets import LOCAL_PASSWORD, PA_PASSWORD
 
 def dbescape(s):
     # escape single quotes so data for text columns won't break
@@ -38,7 +36,7 @@ class Connection:
         if os.environ.get('MU') or os.environ.get('USERDOMAIN') == 'DESKTOP-UPR7L5U':
             if not self.schema:
                 raise Exception('Missing schema in dbconnect')
-            return mysql.connector.connect(user='graeme', password='gjw497',
+            return mysql.connector.connect(user='graeme', password=LOCAL_PASSWORD,
                 host='127.0.0.1',
                 database=self.schema,
                 connection_timeout=36000)

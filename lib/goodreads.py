@@ -14,10 +14,10 @@ import time
 
 ##############################################################
 # NOTE:  Goodreads has deprecated the API and is no longer
-# giving out API keys.  If you want to use this, let's talk.
+# giving out API keys.  If you want to use my key, let's talk.
 ##############################################################
 
-GOODREADS_API_KEY = "MNlciatZGMcW92q6tRoQA"
+from .secrets import GOODREADS_API_KEY
 
 # The Goodreads API returns deeply nested XML, so we have to do some
 # work to extract the few values we need, first converting to JSON.
