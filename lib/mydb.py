@@ -7,16 +7,12 @@
 #    carryonwilliams@gmail.com
 #
 
-import os
 import itertools
 from pymarc import Record, Field
 
-if os.environ.get('MU') or os.environ.get('USERDOMAIN') == 'DESKTOP-UPR7L5U':
-    import mysql.connector
-else:
-    import MySQLdb
+import mysql.connector
 
-from .secrets import LOCAL_PASSWORD, PA_PASSWORD
+from .secrets import MYSQL_PASSWORD
 
 def dbescape(s):
     # escape single quotes so data for text columns won't break
@@ -33,17 +29,12 @@ class Connection:
         self._connection = self._open()
 
     def _open(self):
-        if os.environ.get('MU') or os.environ.get('USERDOMAIN') == 'DESKTOP-UPR7L5U':
-            if not self.schema:
-                raise Exception('Missing schema in dbconnect')
-            return mysql.connector.connect(user='graeme', password=LOCAL_PASSWORD,
-                host='127.0.0.1',
-                database=self.schema,
-                connection_timeout=36000)
-        else:  # pythonanywhere, which is the else because it doesn't expose env vars
-            return MySQLdb.connect(host="lagbolt.mysql.pythonanywhere-services.com",
-            user="lagbolt", password=PA_PASSWORD, database="lagbolt$default",
-            charset='utf8', use_unicode=True)
+        if not self.schema:
+            raise Exception('Missing schema in dbconnect')
+        return mysql.connector.connect(user='graeme', password=MYSQL_PASSWORD,
+            host='127.0.0.1',
+            database=self.schema,
+            connection_timeout=36000)
 
     def get_connection(self):
         if not self._connection.is_connected():

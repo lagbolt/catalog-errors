@@ -99,7 +99,10 @@ for bibnum, theRecord in therecordgenerator:
                 novelist_seriesname = opac.checkNoveListseries(session, libcode, bibnum, requestdelay=5)
             else:
                 novelist_seriesname = None
-            goodreads_seriesname = goodreads.get_seriesname(session, goodreads.get_worknumber(session, author_name, title))
+            if goodreads.enabled():
+                goodreads_seriesname = goodreads.get_seriesname(session, goodreads.get_worknumber(session, author_name, title))
+            else:
+                goodreads_seriesname = None
             print(bibnum, author_name, title, isfdb_seriesname, novelist_seriesname, goodreads_seriesname, sep = ',')
 
 print(counts)

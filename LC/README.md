@@ -40,7 +40,7 @@ then "Battles, Boring" and "Marsupials, Australian" would be added to the lcsh-s
 
 Run sh-check.py
 
-This program can read either from a MySQL database table or a MARC file.  If you're reading from a MySQL database you'll need to edit the connection information in mydb.py
+This program can read either from a MySQL database table or a MARC file.  If you're reading from a MySQL database you'll need to edit the connection information in mydb.py and supply the database password in secrets.py.  If you're only reading from MARC files, you do not have to make either of those changes.
 
 The table can be specified either by name or by schema and name (e.g., "schema_name.table_name").
 
