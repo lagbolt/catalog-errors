@@ -20,7 +20,7 @@ import time
 from .secrets import GOODREADS_API_KEY
 
 def enabled():
-    return not GOODREADS_API_KEY
+    return bool(GOODREADS_API_KEY)
 
 # The Goodreads API returns deeply nested XML, so we have to do some
 # work to extract the few values we need, first converting to JSON.
