@@ -17,7 +17,10 @@ import time
 # giving out API keys.  If you want to use my key, let's talk.
 ##############################################################
 
-from .secrets import GOODREADS_API_KEY
+try:
+    from .secrets import GOODREADS_API_KEY
+except ImportError:
+    from .secrets_stub import GOODREADS_API_KEY
 
 def enabled():
     return bool(GOODREADS_API_KEY)

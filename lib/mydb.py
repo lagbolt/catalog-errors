@@ -12,7 +12,10 @@ from pymarc import Record, Field
 
 import mysql.connector
 
-from .secrets import MYSQL_PASSWORD
+try:
+    from .secrets import MYSQL_PASSWORD
+except ImportError:
+    from .secrets_stub import MYSQL_PASSWORD
 
 def dbescape(s):
     # escape single quotes so data for text columns won't break
