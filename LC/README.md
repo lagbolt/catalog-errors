@@ -1,4 +1,4 @@
-# Checking MARC subject headings against the Library of COngress
+# Checking MARC subject headings against the Library of Congress
 
 This is a lot of steps.  Well, not really, only five.  It's partly for efficiency, partly for debugging, and partly in case you find other uses for the intermediate files.
 
@@ -44,17 +44,20 @@ This program can read either from a MySQL database table or a MARC file.  If you
 
 The table can be specified either by name or by schema and name (e.g., "schema_name.table_name").
 
-The program will check the subject headings in the 6xx fields of the input against the LoC subject terms in the lcsh-subject-terms.txt file print out fields where there is a discrepancy.
+The program will check the subject headings in the 6xx fields of the input against the LoC subject terms in the lcsh-subject-terms.txt file and in the lcsj-entries.txt file and print out fields where there is a discrepancy.
+
+For testing purposes, lcsh-subject-terms.txt and lcsj-entries.txt files are provided in the files folder of this repository.  However, if you are running this in production, you should probably download up-to-date files from the Library of Congress
+and rerun this workflow from the beginning.
 
 The program will list each 'bad' heading once, and also provide a summary with counts.  If you want every occurrence of a bad heading listed, you'll need to edit the code (specifically the errorSet variable).
 
 The output is a bit idiosyncratic.  A code is appended to each subfield, as follows:
-    Y - found in the LCSH
-    C - found in the LC children's headings
-    N - not found
-    D - a date
-    I - ignored
-    FC - for the phrase "Fictitious character"
+* Y - found in the LCSH
+* C - found in the LC children's headings
+* N - not found
+* D - a date
+* I - ignored
+* FC - for the phrase "Fictitious character"
 
 ## Known issues
 
