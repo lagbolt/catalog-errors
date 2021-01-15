@@ -10,7 +10,7 @@ In this folder:
 * seriescheck.py, a console application
 * the LC folder, containing a workflow for checking subject headings
 
-Btw, if you need help, email me!
+Btw, if you need help, email me or message me on Twitter @lagbolt.
 
 ## A note about checking
 
@@ -33,7 +33,7 @@ This contains a number of libraries used by the console applications.  The conso
 
 IF YOU DOWNLOAD A ZIP OF THIS REPOSITORY ON WINDOWS rather than cloning it, the 'lib' symbolic link in the LC folder will be broken and you will have to fix it.
 
-If you want to read data (i.e., MARC records in some form) from a MySQL database you will need to modify mydb.py to connect to your database.  You will also need to supply the database password in secrets.py
+If you want to read data (i.e., MARC records in some form) from a MySQL database you may need to modify lib/mydb.py to connect to your database.  You will also need to create lib/secrets.py and supply the database password.  (See lib/secrets_stub.py for details.)
 
 ## A note about the console applications
 
@@ -44,9 +44,9 @@ python recordscan.py (arguments ...)
 
 The console applications will read either from a MARC file (specified by the --inputfile argument) or a MySQL database table (specified by the --inputtable argument).
 
-If you want to read data from a database, you'll need to edit the code in lib\mydb.py to connect to your MySQL database instance.  Once you've done that, you can specify the table with or without the schema name.  That is, "tablename" or "schema.tablename".  If you don't specify a schema, it will use the value used when the code connects to the database.
+If you want to read data from a database, you may need to edit the code in lib/mydb.py to connect to your MySQL database instance.  Once you've done that, you can specify the table with or without the schema name.  That is, "tablename" or "schema.tablename".  If you don't specify a schema, it will use the value used when the code connects to the database.
 
-The format of the table is described in lib\mydb.py.  You can use data in whatever format you like provided you modify mydb.readpymarc to yield a bibnumber (any string to identify the record) and a pymarc Record.
+The format of the table is described in lib/mydb.py.  You can use data in whatever format you like provided you modify mydb.readpymarc to yield a bibnumber (any string to uniquely identify the record) and a pymarc Record.
 
 ## recordscan.py
 
@@ -61,11 +61,11 @@ This console application extracts the author, title and any series information f
 * Goodreads.com, via their API
 * Novelist, via an internal OPAC API
 
-You will only be able to read series data from Goodreads if you supply an API key in lib\secrets.py.  Goodreads has depreceated the API and is no longer giving out keys.  If you would like to use my API key, let's discuss it.
+You will only be able to read series data from Goodreads if you supply an API key in lib/secrets.py.  See lib/secrets_stub.py for details.  Goodreads has depreceated the API and is no longer giving out keys.  If you would like to use my API key, let's discuss it.
 
-FOr series data from Noevlist, I use an API internal to Bibliocommons OPACs.  You will need to supply a library code on the command line using the --libcode argument.  If it isn't obvious what the code is, email me.
+For series data from Novelist, I use an API internal to Bibliocommons OPACs.  You will need to supply a library code on the command line using the --libcode argument.  If you're a Bibliocommons library and it isn't obvious what the code is, contact me.
 
-I don't compare every record to all three sources since I don't want to overload the Goodreads or Novelist APIs.  I compare the record to the downloaded copy of ISFDB.com.  If there's *any* series information in ISFDB and no 490 in the record, then I go on to check Goodreads and Novelist, and report the results for all three sources.
+I don't compare every record to all three sources since I don't want to overload the Goodreads or Novelist APIs.  I compare each record to the downloaded copy of ISFDB.com.  If there's *any* series information in ISFDB and no 490 in the record, then I go on to check Goodreads and Novelist, and report the results for all three sources.
 
 This means that there might be records which are missing series information which are not reported, if the information is also missing in ISFDB.
 
