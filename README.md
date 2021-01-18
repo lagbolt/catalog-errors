@@ -54,12 +54,14 @@ This console application reads MARC records one by one and:
 * runs a series of error checks against the record, optionally printing out matching (i.e., problematic) records.  The checks are defined in the code, but if you know a little about the pymarc library, you should be able to add your own.
 * checks for duplicate names, as described above.
 
-## seriescheck.py
+## seriescheck.py and create_isfdb_views.sql
 
 This console application extracts the author, title and any series information from the MARC record and compares this to the series information available from:
 * a downloaded copy of ISFDB.com
 * Goodreads.com, via their API
 * Novelist, via an internal OPAC API
+
+The code uses a view created within the ISFDB database.  You can run create_isfdb_views.sql in your MySQL database to create the views.
 
 You will only be able to read series data from Goodreads if you supply an API key in lib/secrets.py.  See lib/secrets_stub.py for details.  Goodreads has depreceated the API and is no longer giving out keys.  If you would like to use my API key, let's discuss it.
 
