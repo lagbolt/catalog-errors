@@ -8,6 +8,7 @@ In this folder:
 * Python libraries in the lib folder
 * recordscan.py, a console application
 * seriescheck.py, a console application
+* tagsandindicators.py, a console application
 * the LC folder, containing a workflow for checking subject headings
 
 Btw, if you need help, email me or message me on Twitter @lagbolt.
@@ -70,6 +71,14 @@ For series data from Novelist, I use an API internal to Bibliocommons OPACs.  Yo
 I don't compare every record to all three sources since I don't want to overload the Goodreads or Novelist APIs.  I compare each record to the downloaded copy of ISFDB.com.  If there's *any* series information in ISFDB and no 490 in the record, then I go on to check Goodreads and Novelist, and report the results for all three sources.
 
 This means that there might be records which are missing series information which are not reported, if the information is also missing in ISFDB.
+
+## tagsandindicators.py
+
+This is a simple console application which takes a MARC file as input:
+```
+python tagsandindicators.py nameofmarcfile.mrc
+```
+and outputs a count for each **combination** of tag and indicators values.
 
 ## The LC folder
 
