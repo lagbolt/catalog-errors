@@ -9,7 +9,8 @@ In this folder:
 * recordscan.py, a console application
 * seriescheck.py, a console application
 * tagsandindicators.py, a console application
-* the LC folder, containing a workflow for checking subject headings
+* the LCSH folder, containing a workflow for checking subject headings
+* the LCNAF folder, containing a console application for collecting gender data from the LCNAF
 
 Btw, if you need help, email me or message me on Twitter @lagbolt.
 
@@ -80,7 +81,11 @@ python tagsandindicators.py nameofmarcfile.mrc
 ```
 and outputs a count for each **combination** of tag and indicators values.
 
-## The LC folder
+## The LCSH folder
 
 This folder has its own README.md.  In brief, the folder contains a workflow for checking 6xx fields against data from the Library of Congress.
+
+## The LCNAF folder
+
+This folder has its own README.md.  At the moment, this is just a console application to extract gender data from the LCNAF.
 
