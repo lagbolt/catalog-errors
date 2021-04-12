@@ -9,7 +9,7 @@ The download was dated 17 March 2021.
 The files in this folder are ...
 
    * lcnaf-gender.py is the console application which extracts the gender data from the LCNAF and counts different gender values
-   * lcnaf-1k.txt is the first one thousand items (aka NAF records) from the LCNAF
+   * lcnaf-1k.txt is the first one thousand items (aka NAR records) from the LCNAF
    * lcnaf-1k-pretty.txt is a pretty-printed version of lcnaf-1k.txt
    * lcnaf-genders-detail.csv is the result of the analysis
    * lcnaf-genders-detail.xlsx is the .csv file converted to normal Excel format, which I'm providing for you because Excel's import of .csv files is (ahem) problematic.
