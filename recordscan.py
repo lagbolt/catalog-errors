@@ -32,11 +32,11 @@ authorSet : Set[str] = set()
 
 # Utility functions
 
-def to_string_simple(the_Record : Record) -> str:
+def to_string_simple(the_record : Record) -> str:
     # This is just for identifying faulty records in the output.
     # You can use whatever MARC fields you want here
-    part1 = the_Record['001'].data if the_Record['001'] else "No 001"
-    part2 = the_Record['245']['a'][:60] if the_Record['245'] else "No 245"
+    part1 = the_record['001'].data if the_record['001'] else "No 001"
+    part2 = the_record['245']['a'][:60] if the_record['245'] else "No 245"
     return part1 + '/' + part2
 
 # *** Next four functions are concerned with harvesting author data
@@ -53,9 +53,6 @@ def collect_authors(arecord : Record):
         if f['a']:
             aname = f['a'].rstrip(",.") + ("#" + f['d'].rstrip(",.") if f['d'] else "")
             authorSet.add(aname)
-
-    fieldlist = arecord['100'] if arecord['100'] else None
-    fieldlist += arecord.get_fields('700')
 
 # split author string into name, birth date, death date, with missing values == None
 rgx = re.compile(r"(.*)(#\d{4}-)(\d{4}\.)?$")

@@ -63,7 +63,7 @@ for bibnum, theRecord in therecordgenerator:
         try:
             author_name = mymarc.flipnames(field100['a']).encode("utf-8", "strict").decode('latin-1', "strict")
             title = theRecord['245']['a'].rstrip("/: ").encode("utf-8", "strict").decode('latin-1', "strict")
-        except:
+        except Exception:
             # print(f"Encoding problem with {field100['a']} or {record['245']['a']}")
             counts['Character conversion failed'] += 1
             continue
@@ -73,7 +73,7 @@ for bibnum, theRecord in therecordgenerator:
         )
         try:
             row = check_table.readfirstrow(query=query, debug=False)
-        except:
+        except Exception:
             # print(f"Problem with {author_name} and {title}")
             counts['Query failed'] += 1
             continue
