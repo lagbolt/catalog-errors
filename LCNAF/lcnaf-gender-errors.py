@@ -35,7 +35,7 @@ def gender_fail(gender_value):
     if t.startswith("("):
         pos = t.find(")") + 1
         t = t[pos:].lstrip()
-    return not (t.lower() in acceptable)
+    return t.lower() not in acceptable
 
 # For output in an Excel-compatible .csv file
 def quote(s):
@@ -71,7 +71,7 @@ def gender_search(whole_graph, outfile):
             debugstring = str(element)
             gender_check(gender_value, json_graph, outfile)
             return
-    return # no gender, no problem
+    # no gender, no problem
 
 # The value of a gender attribute can either be a one-item dictionary
 # (with key = '@id') or a list of one-item dictionaries.  The value in
@@ -119,10 +119,10 @@ def decode_key(gender_id, whole_graph):
                 return gender_value
             else:
                 print("Can't get value from ", part)
-                raise Exception("Can't get value from gender object")
+                raise ValueError("Can't get value from gender object")
     print("Can't find gender id", gender_id)
     print(json.dumps(whole_graph, indent=2))
-    raise Exception("Gender id not found")
+    raise ValueError("Gender id not found")
 
 #
 #     Scan input file and print out gender errors
