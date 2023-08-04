@@ -21,6 +21,7 @@ import json
 
 from collections import Counter
 
+DEBUG = False
 genders = Counter()
 
 # For output in an Excel-compatible .csv file
@@ -75,10 +76,10 @@ def decode_key(gender_id, whole_graph):
                 return gender_value
             else:
                 print("Can't get value from ", part)
-                raise Exception("Can't get value from gender object")
+                raise ValueError("Can't get value from gender object")
     print("Can't find gender id", gender_id)
     print(json.dumps(whole_graph, indent=2))
-    raise Exception("Gender id not found")
+    raise ValueError("Gender id not found")
 
 #
 #     Scan input file and collect gender counts
@@ -100,12 +101,12 @@ with open(r"lcnaf") as inf:
                 gender_search(json_graph)
                 break
 
-            # for debugging, because the LCNAF has millions of records
-"""         if not (i%1000):
-                print()
-                for (k1, k2), cnt in genders.items():
-                    print(quote(k1), quote(k2), cnt, sep=" , ")
-                _ = input("CR to continue: ") """
+        # for debugging, because the LCNAF has millions of records
+        if DEBUG and not (i%1000):
+            print()
+            for (k1, k2), cnt in genders.items():
+                print(quote(k1), quote(k2), cnt, sep=" , ")
+            _ = input("CR to continue: ")
 
 #
 #      Output the gender counts in two ways
