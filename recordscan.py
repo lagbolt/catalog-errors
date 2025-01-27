@@ -8,8 +8,9 @@
 #    The database table should have columns for bibnumber, tag, indicators, and tagData.
 #    tagData is all the subfields glommed together.  You can get more information from
 #    the mydb.py file.
-# 
-#    Version:  0.1.0  1/1/21
+#
+#
+#    Version:  0.2.0  1/26/25
 #
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #

@@ -1,5 +1,5 @@
 # 
-#    Version:  0.1.0  1/1/21
+#    Version:  0.2.0  1/26/25
 # 
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
@@ -30,9 +30,11 @@ def enabled():
 
 def get_worknumber(session, author:str, title:str, debug=False):
     time.sleep(2)
-    url = f"https://www.goodreads.com/search/index.xml?key=" + GOODREADS_API_KEY
+    url = f"https://www.goodreads.com/search/index.xml?key=MNlciatZGMcW92q6tRoQA"
     params = { 'q' : f"{author} {title}"}
     response = session.get(url, params=params).text
+    if debug:
+        print(f"response in get_worknumber: {response}")
     if (results := xmltodict.parse(response)['GoodreadsResponse']['search']['results']):
         if type((work := results['work'])) == type(list()):
             work = work[0]
@@ -62,6 +64,9 @@ def get_seriesname(session, worknumber: str, debug=False):
 # This allows you to run this file on it own to test single author/title values.
 def _testloop():
     with requests.Session() as session:
+        session.headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+        }
         debugFlag = False
         while True:
             response = input("Author (or 'end'): ")
