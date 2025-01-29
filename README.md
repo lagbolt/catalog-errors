@@ -7,8 +7,10 @@ In this folder:
 * a requirements.txt file
 * Python libraries in the lib folder
 * recordscan.py, a console application
-* seriescheck.py, a console application
+* sf-seriescheck.py, a console application
+* goodreads-seriescheck.py, a console application
 * tagsandindicators.py, a console application
+* record-fields.py, a console application
 * the LCSH folder, containing a workflow for checking subject headings
 * the LCNAF folder, containing a console application for collecting gender data from the LCNAF
 
@@ -44,7 +46,7 @@ You run the console applications using Python, e.g.:
 python recordscan.py (arguments ...)
 ```
 
-The console applications will read either from a MARC file (specified by the --inputfile argument) or a MySQL database table (specified by the --inputtable argument).
+Some console applications will read either from a MARC file (specified by the --inputfile argument) or a MySQL database table (specified by the --inputtable argument).
 
 If you want to read data from a database, you may need to edit the code in lib/mydb.py to connect to your MySQL database instance.  Once you've done that, you can specify the table with or without the schema name.  That is, "tablename" or "schema.tablename".  If you don't specify a schema, it will use the value used when the code connects to the database.
 
@@ -56,7 +58,13 @@ This console application reads MARC records one by one and:
 * runs a series of error checks against the record, optionally printing out matching (i.e., problematic) records.  The checks are defined in the code, but if you know a little about the pymarc library, you should be able to add your own.
 * checks for duplicate names, as described above.
 
-## seriescheck.py and create_isfdb_views.sql
+## goodreads-seriescheck.py
+
+This console application reads records from a MARC file and, using the author and title information, gets series information from Goodreads.  It checks the series information from Goodreads with the series information from the MARC record.  At the moment, it prints out a summary of every record, with a "***" indication when the information does not match, but it would be easy enough to change the code to only print out the records with information that does not match.
+
+You will only be able to read series data from Goodreads if you supply an API key in lib/secrets.py.  See lib/secrets_stub.py for details.  Goodreads has depreceated the API and is no longer giving out keys.  If you would like to use my API key, let's discuss it.
+
+## sf-seriescheck.py and create_isfdb_views.sql
 
 This console application extracts the author, title and any series information from the MARC record and compares this to the series information available from:
 * a downloaded copy of ISFDB.com
