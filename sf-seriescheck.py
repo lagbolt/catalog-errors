@@ -1,9 +1,11 @@
 #
 #    Scan a MARC file or database table and use the author and title to retrieve series
 #    information from various external sources to check for a missing 490 (series) field.
+#    Because a downloaded copy of isfdb.com is the primary source, this specific code is
+#    only suitable for lists of science fiction and fantasy books. 
 #
-#    Usage:  python seriescheck.py --inputfile <MARC input file> [ --libcode library-code]
-#       or:  python seriescheck.py --inputtable <name of database table>  [ --libcode library-code]
+#    Usage:  python sf-seriescheck.py --inputfile <MARC input file> [ --libcode library-code]
+#       or:  python sf-seriescheck.py --inputtable <name of database table>  [ --libcode library-code]
 #
 #    The database table should have columns for bibnumber, tag, indicators, and tagData.
 #    tagData is all the subfields glommed together.  You can get more information from
