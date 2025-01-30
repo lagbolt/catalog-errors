@@ -46,10 +46,11 @@ from lib import mymarc
 
 def subjectheadinggenerator(recordgenerator):
     # therecord is a pymarc Record
-    for bibnumber, therecord in recordgenerator:
+    for index, (bibnumber, therecord) in enumerate(recordgenerator):
         # if you're reading from a MARC file, bibnumber
         # will be empty.  You can set it from therecord here
-        for subjectfield in therecord.subjects():
+        bibnumber = index
+        for subjectfield in therecord.subjects:
             if subjectfield.indicator2 == "0":       # this is the only case we're handling
                 yield bibnumber, subjectfield
 
