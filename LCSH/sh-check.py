@@ -9,13 +9,25 @@
 #    tagData is all the subfields glommed together.  You can get more information from
 #    the mydb.py file.
 #
-#    The --list argument specifies a file for a listing of the first occurrence of each 'bad' (= unrecognized)
+#    The --list argument specifies a file for a listing of the FIRST occurrence of each 'bad' (= unrecognized)
 #    heading.  The default is to write the listing to the terminal.  If you want the listing to include *every*
 #    occurrence, edit the code below to remove 'errorSet'
 #
 #    The -summary argument specifies a file for a summary giving each 'bad' (= unrecognized) heading and a
 #    count.  The default is to write the summary to the terminal
 #
+#    Output format:
+#
+#    The first instance of each 'bad' heading is listed along with the other subfields in the record.  Each subfield
+#    is labelled with a code indicating the status of each subfield.  The codes are:
+#
+#        (Y)   Subfield is present in LCSH
+#        (N)   Subfield is not present in LCSH or CHildren's Subject Headings
+#        (C)   Subfield is not present in LCSH but is present in Children's Subject Headings
+#        (D)   Subfield is a date (i.e., subfield $d)
+#        (FC)  Subfield is a ficitious character
+#        (I)   Subfield is ignored
+
 #    Known issues:
 #
 #    I should check headings against the Library of Congress Name Authority File.
@@ -113,7 +125,8 @@ def main():
             if c > 999999:
                 break
 
-            printString = f"{bn} : {thefield.tag} {str(thefield.indicators)} : "
+            indicatorString = (thefield.indicator1 + thefield.indicator2).replace(" ", "\\")
+            printString = f"{bn:3} : {thefield.tag} {indicatorString} : "
             printFlag = False
             for subfieldcode, subfieldvalue in thefield:
                 subfieldvalue =  mymarc.namestrip(subfieldvalue)  # strip punctuation
@@ -143,6 +156,7 @@ def main():
             if printFlag:
                 print(printString, file=outfile)
 
+    print("\n\n")
     with create_file_context(summaryfile, 'w', encoding="utf-8") as outfile:
         for k, v in errorCounter.items():
             print(f"{v}, {k}", file=outfile)
