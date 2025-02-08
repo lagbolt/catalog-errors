@@ -17,23 +17,44 @@
 #    carryonwilliams@gmail.com
 #
 
+import argparse
+import contextlib
 import pymarc
 import sys
 
-tag_matches = sys.argv[2:]
+# wrapper so stdout looks like a file with a context manager
+
+def create_file_context(file, mode="", encoding="utf-8"):
+    if isinstance(file, str):
+        # If string, open file
+        return open(file, mode=mode, encoding=encoding)
+    else:
+        # Caller is responsible for closing file
+        return contextlib.nullcontext(file)
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--inputfile", "-if", help="MARC file to read", required=True)
+parser.add_argument("--outputfile", "-of", help="CSV output file", required=False, default=sys.stdout)
+parser.add_argument("--tags", "-t", help="output fields with these tags", required=True, nargs="+")
+args = parser.parse_args()
+
+tag_matches = args.tags
 
 def match_tag(tag):
     return any (
         ( tag[:len(m)]==m for m in tag_matches )
     )
 
-with open(sys.argv[1], 'rb') as marc_input:
+with ( open(args.inputfile, 'rb') as marc_input,
+        create_file_context(args.outputfile, mode="w", encoding="utf-8") as output_file):
     for i, aRecord in enumerate(pymarc.MARCReader(marc_input)):
+        printFlag = False
         for aField in aRecord.get_fields():
             if match_tag(aField.tag):
+                printFlag = True
                 try:
-                    print(f"{i:2}:  {aField}")
+                    print(f"{i:2}:  {aField}", file=output_file)
                 except UnicodeEncodeError:
-                    print(f"{i:2}:  {aField.tag}  ENCODING ERROR")
-        print(10*"  -")
- 
+                    print(f"{i:2}:  {aField.tag}  ENCODING ERROR", file=output_file)
+        if printFlag:
+            print(10*"  -", file=output_file)

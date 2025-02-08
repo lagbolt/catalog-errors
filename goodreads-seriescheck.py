@@ -22,11 +22,13 @@
 
 
 
-
-
+import argparse
+import contextlib
+import csv
 import pymarc
-import sys
 import requests
+import sys
+
 from lib import goodreads
 
 def get_subfield(theRecord, tag, subfield):
@@ -50,10 +52,31 @@ def compare_series(series_490, series_800, gr_series):
         return "None"
     return (gr_series == series_490) or (gr_series == series_800)
 
+# wrapper so stdout looks like a file with a context manager
+
+def create_file_context(file, mode="", encoding="utf-8"):
+    if isinstance(file, str):
+        # If string, open file
+        return open(file, mode=mode, encoding=encoding)
+    else:
+        # Caller is responsible for closing file
+        return contextlib.nullcontext(file)
+
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--inputfile", "-if", help="MARC file to read", required=True)
+parser.add_argument("--outputfile", "-of", help="CSV output file", required=False, default=sys.stdout)
+parser.add_argument("--separator", "-sep", help="CSV separator character(s)", required=False, default=",")
+args = parser.parse_args()
+
 with requests.Session() as session:
     session.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'})
    # Iterate over the records in the file and call Goodreads to get the series
-    with open(sys.argv[1], 'rb') as marc_input:
+    with ( open(args.inputfile, 'rb') as marc_input,
+          create_file_context(args.outputfile, mode="w", encoding="utf-8") as csv_output):
+        writer = csv.writer(csv_output, delimiter=args.separator)
+        writer.writerow(["Index", "100a", "245a", "490a", "800t/830a", "Goodreads series", "Mismatch?"])
         for i, aRecord in enumerate(pymarc.MARCReader(marc_input)):
             author = get_subfield(aRecord, "100", "a").strip(",")
             title = get_subfield(aRecord, "245", "a").strip(" /:")
@@ -64,8 +87,8 @@ with requests.Session() as session:
             worknumber = goodreads.get_worknumber(session, author.split(',')[0], title)
             if not worknumber:
                 gr_series = "No title match"
-                indicator = "   "
+                indicator = " "
             else:
                 gr_series = goodreads.get_seriesname(session, worknumber)
-                indicator = "   " if compare_series(series_490, series_8XX, gr_series) else "***"
-            print(f"{i:2}", author, title, series_490, series_8XX, gr_series, indicator, sep=" | ")
+                indicator = " " if compare_series(series_490, series_8XX, gr_series) else "Y"
+            writer.writerow([i, author, title, series_490, series_8XX, gr_series, indicator])
