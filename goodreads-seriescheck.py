@@ -3,16 +3,18 @@
 #    The series information from Goodreads, if any, is compared to the series information in the records 490, 800 and
 #    and 830 fields, if any.
 #
-#    Usage:  python goodreads-seriescheck.py <MARC input file>
+#    Usage:  python goodreads-seriescheck.py -if <MARC input file> [ -of <output file> ] [ -sep <separator> ]
 #
-#    The output is written to the console in a slightly odd format, which nevertheless can be copied and pasted into Excel.
-#    The columns are:  an index number, the 100a, the 245a, the 490a or None, the 800t or 830a or None, the series information
-#    from Goodreads, and an indication of whether the series information from Goodreads matches the series information in the
-#    record.
+#    The output file is written in Excel-compatible CSV file.  The output file defaults to the console.
+#    The separator defaults to comma.
 #
-#    If you find yourself wishing for a different format, or the ability to write to a file, let me know.
+#    The columns in the CSV file are:  an index number, the 100a, the 245a, the 490a or None, the 800t or 830a or None,
+#    the series information from Goodreads, and a 'Y' indication if the series information from Goodreads does not
+#    matches the series information in the record.
 #
-#    Version:  0.1.0  1/26/25
+#    If you find yourself wishing for a different format.
+#
+#    Version:  0.2.0  2/8/25
 #
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #

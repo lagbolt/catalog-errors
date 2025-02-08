@@ -1,7 +1,9 @@
 #
 #    Scan a MARC file and print out particular fields from each record.
 #
-#    Usage:  python record-fields.py  <MARC input file>  tag-match-1 tag-match-2 ...
+#    Usage:  python record-fields.py  -if <MARC input file> [ -of <output file> ]  -t tag-match-1 tag-match-2 ...
+#
+#    The output file defaults to the console.
 #
 #    For each record in the input file, prints out the fields that match any tag-match argument.
 #
@@ -9,7 +11,7 @@
 #    65 matches any 65X field, and 245 matches only the 245 field.
 #
 #
-#    Version:  0.1.0  1/26/25
+#    Version:  0.2.0  2/8/25
 #
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
