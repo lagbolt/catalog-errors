@@ -35,7 +35,7 @@
 #    The way I process the downloaded subject headings loses the distinction between $a terms and
 #    $x, $y and $z subdivisions.
 #
-#    Version:  0.1.0  1/1/21
+#    Version:  0.2.0  4/10/25
 #
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
@@ -84,6 +84,20 @@ def create_file_context(file, mode="", encoding="utf-8"):
 
 #########
 
+# Strip some punctuation from a subfield
+
+#########
+
+def strip_punctuation(subfield : str) -> str:
+    t = subfield.strip()
+    t = t.rstrip(',')
+    # strip trailing . unless it's an initial, like "Smith, A."
+    if len(t) > 2 and t[-3].isalnum():
+        t = t.rstrip('.')
+    return t
+
+#########
+
 def main():
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group(required=True)
@@ -98,20 +112,19 @@ def main():
     listfile = args.list if args.list else sys.stdout
     summaryfile = args.summary if args.summary else sys.stdout
 
-    # Load phrase list for LC subject headings
+    # Load terms for LC subject headings
 
     subjectTermsSet = set()
-    with open("lcsh-subject-terms.txt", encoding="utf-8") as phraseFile:
-        for phrase in phraseFile:
-            subjectTermsSet.add(phrase.rstrip())
+    with open("subject-terms.txt", encoding="utf-8") as subjectFile:
+        for phrase in subjectFile:
+            subjectTermsSet.add(strip_punctuation(phrase))
 
-    # Load entries from LC children's headings and pull out phrases
+    # Load terms for LC children's headings
 
     childrenstermsSet = set()
-    with open("lcsj-entries.txt", encoding="utf-8") as childrensFile:
-        for entry in childrensFile:
-            for phrase in entry.strip().split("--"):
-                childrenstermsSet.add(phrase)
+    with open("childrens-terms.txt", encoding="utf-8") as childrensFile:
+        for phrase in childrensFile:
+            childrenstermsSet.add(strip_punctuation(phrase))
 
     # Now that we have the LC data loaded, scan the input file / table
 
@@ -129,7 +142,7 @@ def main():
             printString = f"{bn:3} : {thefield.tag} {indicatorString} : "
             printFlag = False
             for subfieldcode, subfieldvalue in thefield:
-                subfieldvalue =  mymarc.namestrip(subfieldvalue)  # strip punctuation
+                subfieldvalue =  strip_punctuation(subfieldvalue)  # strip *some* punctuation
                 printString += "$" + subfieldcode + ":" + subfieldvalue
                 if "Fictitious character" in subfieldvalue:
                     printString += "(FC) : "

@@ -1,3 +1,5 @@
 # ignore all the LC data files
 lc*
 *.txt
+# ignore anything in the OLD directory
+OLD/

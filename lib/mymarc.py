@@ -1,5 +1,5 @@
 # 
-#    Version:  0.1.0  1/1/21
+#    Version:  0.2.0  4/10/25
 # 
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
@@ -22,7 +22,7 @@ def namestrip(authorname : str) -> str:
     t = authorname.strip(' ')
     t = t.rstrip(',')
     # strip trailing . unless it's an initial, like "Smith, A."
-    if len(t) > 2 and t[-3].isalpha():
+    if len(t) > 2 and t[-3].isalnum():
         t = t.rstrip('.')
     return t
 
