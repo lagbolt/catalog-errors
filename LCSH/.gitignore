@@ -1,5 +1,8 @@
+# ignore Python stuff
+__init__.py
 # ignore all the LC data files
 lc*
 *.txt
-# ignore anything in the OLD directory
+# ignore anything in the sub-directories
 OLD/
+utils/

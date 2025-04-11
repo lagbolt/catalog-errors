@@ -46,13 +46,15 @@ with (open(argv[1], 'r', encoding='utf-8') as f,
     for line_number, aline in enumerate(f):
         data = json.loads(aline)
         graph = data['@graph']
+        primary_id = "http://id.loc.gov" + data['@id']
         for item in graph:
             if ('madsrdf:DeprecatedAuthority' in item['@type']
                 or 'madsrdf:deletionNote' in item):
                 # print(f"{line_number+1:6} {id:16}" 'Deprecated/Deleted', file=out)
                 # skip this entry entirely
                 break
-            elif 'bflc:marcKey' in item or 'identifiers:lccn' in item:
+         #   elif 'bflc:marcKey' in item or 'identifiers:lccn' in item:
+            elif item['@id'] == primary_id:
                 process_primary(item, line_number, out, arg_list)
                 break
         else:
