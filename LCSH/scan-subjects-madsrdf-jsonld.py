@@ -25,19 +25,35 @@ def process_primary(item, line_number, outfile, type_list = None):
     if type_list and all([atype not in item['@type'] for atype in type_list]):
         # either type_list is None or we don't want this node type
         return
-    key = item.get('bflc:marcKey', 'xxx')[0:3]  # 'xxx' if no marcKey value
+
     id = item['@id'].split('/')[-1]
-    # handle difference between LCSH and LCNAF
-    if isinstance(item['madsrdf:authoritativeLabel'], str):
-        authoritative_label = item['madsrdf:authoritativeLabel']
-    elif isinstance(item['madsrdf:authoritativeLabel'], dict):
-        authoritative_label = item['madsrdf:authoritativeLabel']['@value']
+
+    # handle difference between in JSON format between LCSH and LCNAF
+
+    key = item.get('bflc:marcKey', 'xxx')  # 'xxx' if no marcKey value
+    if isinstance(key, str):
+        pass
+    elif isinstance(key, list):
+        key = key[0]
+    else:
+        # unexpected JSON format
+        print("Error parsing marcKey")
+        pprint(item)
+        exit()
+
+    item_value = item['madsrdf:authoritativeLabel']
+    if isinstance(item_value, str):
+        pass
+    elif isinstance(item_value, dict):
+        item_value = item_value['@value']
+    elif isinstance(item_value, list):
+        item_value = item_value[0]
     else:
         # unexpected JSON format
         print("Error parsing authoritativeLabel")
         pprint(item)
         exit()
-    print(f"{line_number+1:6} {id:16}", key, authoritative_label, file=outfile)
+    print(f"{line_number+1:6} {id:16}", key[:3], item_value, file=outfile)
 
 arg_list = argv[3:] if len(argv) > 3 else None
 
