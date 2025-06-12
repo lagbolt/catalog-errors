@@ -6,11 +6,7 @@ In this folder:
 * this file
 * a requirements.txt file
 * Python libraries in the lib folder
-* recordscan.py, a console application
-* sf-seriescheck.py, a console application
-* goodreads-seriescheck.py, a console application
-* tagsandindicators.py, a console application
-* record-fields.py, a console application
+* a series of console applications, listed below
 * the LCSH folder, containing a workflow for checking subject headings
 * the LCNAF folder, containing a console application for collecting gender data from the LCNAF
 
@@ -88,6 +84,10 @@ This is a simple console application which takes a MARC file as input:
 python tagsandindicators.py nameofmarcfile.mrc
 ```
 and outputs a count for each **combination** of tag and indicators values.
+
+## record-fields.py
+
+Given a MARC file, outputs, in CSV format, any fields of each record which match a list of patterns.  For more help, see the Python source file.
 
 ## The LCSH folder
 

@@ -7,7 +7,7 @@
 #               [ -sep <record separator string> ]
 #               -t tag-match-1 tag-match-2 ...
 #
-#    The output file defaults to the console.
+#    The output file, which is in CSV format, defaults to the console.
 #
 #    For each record in the input file, prints out the fields that match any tag-match argument.
 #
