@@ -89,6 +89,11 @@ and outputs a count for each **combination** of tag and indicators values.
 
 Given a MARC file, outputs, in CSV format, any fields of each record which match a list of patterns.  For more help, see the Python source file.
 
+## lccn-to-marcxml.py
+
+Read a file of Library of Congress control numbers, one per line, downloads the
+corresponding records in MARCXML format from id.loc.gov, and write the MARCXML to a file.
+
 ## The LCSH folder
 
 This folder has its own README.md.  In brief, the folder contains a workflow for checking 6xx fields against data from the Library of Congress.
