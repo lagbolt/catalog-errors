@@ -48,10 +48,9 @@ with open(sys.argv[1], "r") as input_file:
                 if line.startswith("#"):
                     continue
                 url = "https://id.loc.gov/authorities/names/" + line + ".marcxml.xml"
-                print(url)      # you probably want to comment this out
+                # print(url)         # just for debugging
                 response = requests.get(url)
                 if response.status_code == 200:
-
                     output_file.write(response.text + "\n")
                 else:
                     print(f"Error {str(response.status_code)} for {url}")
