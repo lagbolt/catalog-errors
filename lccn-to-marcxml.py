@@ -53,6 +53,6 @@ with open(sys.argv[1], "r") as input_file:
                 if response.status_code == 200:
                     output_file.write(response.text + "\n")
                 else:
-                    print(f"Error {str(response.status_code)} for {url}")
+                    print(f"Error {response.status_code} for {url}")
                 time.sleep(REQUIRED_DELAY)
             output_file.write(xmlpostamble)
