@@ -1,11 +1,12 @@
 #
-#    Read a file of Library of Congress control numbers, one per line, downloads the
+#    Read a file of Library of Congress control numbers, one per line, download the
 #    corresponding records in MARCXML format from id.loc.gov, and write the MARCXML to a file.
 #
 #    Usage:  python lccn-to-marcxml.py <input-file> <output-file>
 #
-#    For example, if one line of the input file is "no2015128232", the MARCXML is downloaded
-#    from https://id.loc.gov/authorities/names/no2015128232.marcxml.xml
+#    For example, if the DATASET is "names" (defined below) and one line of the input file
+#    is "no2015128232", the MARCXML is downloaded from
+#    https://id.loc.gov/authorities/names/no2015128232.marcxml.xml
 #
 #
 #    Version:  0.1.0  6/25/25
@@ -21,6 +22,10 @@ import requests
 import sys
 import time
 
+# DATASET = "nameS" for the LCNAF, "subjectS" for LCSH, etc.
+# For more details, see the Resource Retrieval section
+# of https://id.loc.gov/views/pages/swagger-api-docs/index.html
+DATASET = "names"
 
 # As required by id.loc.gov/robots.txt
 REQUIRED_DELAY = 3  # seconds
@@ -47,7 +52,7 @@ with open(sys.argv[1], "r") as input_file:
                 line = line.strip()
                 if line.startswith("#"):
                     continue
-                url = "https://id.loc.gov/authorities/names/" + line + ".marcxml.xml"
+                url = f"https://id.loc.gov/authorities/{DATASET}/{line}.marcxml.xml"
                 # print(url)         # just for debugging
                 response = requests.get(url)
                 if response.status_code == 200:
