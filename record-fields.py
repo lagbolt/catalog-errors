@@ -45,20 +45,15 @@ parser.add_argument("--separator", "-sep", help="separator between records", req
 parser.add_argument("--tags", "-t", help="output fields with these tags", required=True, nargs="+")
 args = parser.parse_args()
 
-tag_matches = args.tags
+tag_matches = tuple(args.tags)
 record_separator = args.separator
-
-def match_tag(tag):
-    return any (
-        ( tag[:len(m)]==m for m in tag_matches )
-    )
 
 with ( open(args.inputfile, 'rb') as marc_input,
         create_file_context(args.outputfile, mode="w", encoding="utf-8") as output_file):
     for i, aRecord in enumerate(pymarc.MARCReader(marc_input)):
         printFlag = False      # did I print any fields from this record?
         for aField in aRecord.get_fields():
-            if match_tag(aField.tag):
+            if aField.tag.startswith(tag_matches):
                 printFlag = True
                 try:
                     print(f"{i:2}:  {aField}", file=output_file)
