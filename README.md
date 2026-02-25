@@ -87,7 +87,7 @@ and outputs a count for each **combination** of tag and indicators values.
 
 ## record-fields.py
 
-Given a MARC file, outputs, in CSV format, any fields of each record which match a list of patterns.  For more help, see the Python source file.
+Given a MARC file, outputs any field of each record whose tag match a list of patterns.  For more help, see the Python source file.
 
 ## lccn-to-marcxml.py
 
