@@ -77,23 +77,6 @@ I don't compare every record to all three sources since I don't want to overload
 
 This means that there might be records which are missing series information which are not reported, if the information is also missing in ISFDB.
 
-## tagsandindicators.py
-
-This is a simple console application which takes a MARC file as input:
-```
-python tagsandindicators.py nameofmarcfile.mrc
-```
-and outputs a count for each **combination** of tag and indicators values.
-
-## record-fields.py
-
-Given a MARC file, outputs any field of each record whose tag match a list of patterns.  For more help, see the Python source file.
-
-## lccn-to-marcxml.py
-
-Read a file of Library of Congress control numbers, one per line, downloads the
-corresponding records in MARCXML format from id.loc.gov, and write the MARCXML to a file.
-
 ## The LCSH folder
 
 This folder has its own README.md.  In brief, the folder contains a workflow for checking 6xx fields against data from the Library of Congress.

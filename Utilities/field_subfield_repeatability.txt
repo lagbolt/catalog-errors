@@ -1,0 +1,228 @@
+001 NR
+003 NR
+005 NR
+006 R
+007 R
+008 NR
+010 NR $a NR $b R $z R $8 R
+013 R $a NR $b NR $c NR $d R $e R $f R $6 NR $8 R
+015 R $a R $q R $z R $2 NR $6 NR $8 R
+016 R $a NR $z R $2 NR $8 R
+017 R $a R $b NR $d NR $i NR $z R $2 NR $6 NR $8 R
+018 NR $a NR $6 NR $8 R
+020 R $a NR $c NR $q R $z R $6 NR $8 R
+022 R $a NR $y R $z R $0 NR $1 R $2 NR $6 NR $8 R
+023 R $a NR $y R $0 NR $1 R $2 NR $6 NR $8 R
+024 R $a NR $c NR $d NR $q R $z R $2 NR $6 NR $8 R
+025 R $a R $8 R
+027 R $a NR $q R $z R $6 NR $8 R
+028 R $a NR $b NR $q R $6 NR $8 R
+030 R $a NR $z R $6 NR $8 R
+031 R $a NR $b NR $c NR $d R $e NR $g NR $m NR $n NR $o NR $p NR $q R $r NR $s R $t R $u R $y R $z R $2 NR $6 NR $8 R
+032 R $a NR $b NR $6 NR $8 R
+033 R $a R $b R $c R $p R $0 R $1 R $2 R $3 NR $6 NR $8 R
+034 R $a NR $b R $c R $d NR $e NR $f NR $g NR $h R $j NR $k NR $m NR $n NR $p NR $r NR $s R $t R $x NR $y NR $z NR $0 R $1 R $2 NR $3 NR $6 NR $8 R
+035 R $a NR $z R $6 NR $8 R
+036 NR $a NR $b NR $6 NR $8 R
+037 R $a NR $b NR $c R $f R $g R $n R $3 NR $5 R $6 NR $8 R
+038 NR $a NR $6 NR $8 R
+040 NR $a NR $b NR $c NR $d R $e R $6 NR $8 R
+041 R $a R $b R $d R $e R $f R $g R $h R $i R $j R $k R $m R $n R $p R $q R $r R $t R $2 NR $3 NR $6 NR $7 R $8 R
+042 NR $a R
+043 R $a R $b R $c R $0 R $1 R $2 R $6 NR $8 R
+044 NR $a R $b R $c R $2 R $6 NR $8 R
+045 NR $a R $b R $c R $6 NR $8 R
+046 R $a NR $b NR $c NR $d NR $e NR $j NR $k NR $l NR $m NR $n NR $o NR $p NR $x R $z R $2 NR $3 NR $6 NR $8 R
+047 R $a R $2 NR $8 R
+048 R $a R $b R $2 NR $8 R
+050 R $a R $b NR $0 R $1 R $3 NR $6 NR $8 R
+051 R $a NR $b NR $c NR $8 R
+052 R $a NR $b R $d R $0 R $1 R $2 NR $6 NR $8 R
+055 R $a NR $b NR $0 R $1 R $2 NR $6 NR $8 R
+060 R $a R $b NR $0 R $1 R $8 R
+061 R $a R $b NR $c NR $8 R
+066 NR $a NR $b NR $c R
+070 R $a R $b NR $0 R $1 R $8 R
+071 R $a R $b NR $c R $8 R
+072 R $a NR $x R $2 NR $6 NR $8 R
+074 R $a NR $z R $8 R
+080 R $a NR $b NR $x R $0 R $1 R $2 NR $6 NR $8 R
+082 R $a R $b NR $m NR $q NR $0 R $1 R $2 NR $6 NR $7 R $8 R
+083 R $a R $c R $m NR $q NR $y R $z R $0 R $1 R $2 NR $6 NR $7 R $8 R
+084 R $a R $b NR $q NR $0 R $1 R $2 NR $6 NR $7 R $8 R
+085 R $a R $b R $c R $f R $r R $s R $t R $u R $v R $w R $y R $z R $0 R $1 R $6 NR $8 R
+086 R $a NR $z R $0 R $1 R $2 NR $6 NR $8 R
+088 R $a NR $z R $6 NR $8 R
+100 NR $a NR $b NR $c R $d NR $e R $f NR $g R $j R $k R $l NR $n R $p R $q NR $t NR $u NR $0 R $1 R $2 NR $4 R $6 NR $7 R $8 R
+110 NR $a NR $b R $c R $d R $e R $f NR $g R $k R $l NR $n R $p R $t NR $u NR $0 R $1 R $2 NR $4 R $6 NR $7 R $8 R
+111 NR $a NR $c R $d R $e R $f NR $g R $j R $k R $l NR $n R $p R $q NR $t NR $u NR $0 R $1 R $2 NR $4 R $6 NR $7 R $8 R
+130 NR $a NR $d R $f NR $g R $h NR $k R $l NR $m R $n R $o NR $p R $r NR $s R $t NR $0 R $1 R $2 NR $6 NR $7 R $8 R
+210 R $a NR $b NR $2 R $6 NR $7 R $8 R
+222 R $a NR $b NR $6 NR $8 R
+240 NR $a NR $d R $f NR $g R $h NR $k R $l NR $m R $n R $o NR $p R $r NR $s R $0 R $1 R $2 NR $6 NR $7 R $8 R
+242 R $a NR $b NR $c NR $h NR $n R $p R $y NR $6 NR $8 R
+243 NR $a NR $d R $f NR $g R $h NR $k R $l NR $m R $n R $o NR $p R $r NR $s R $6 NR $8 R
+245 NR $a NR $b NR $c NR $f NR $g NR $h NR $k R $n R $p R $s NR $6 NR $7 R $8 R
+246 R $a NR $b NR $f NR $g R $h NR $i NR $n R $p R $5 NR $6 NR $7 R $8 R
+247 R $a NR $b NR $f NR $g R $h NR $n R $p R $x NR $6 NR $7 R $8 R
+250 R $a NR $b NR $3 NR $6 NR $7 R $8 R
+251 R $a R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+254 NR $a NR $6 NR $8 R
+255 R $a NR $b NR $c NR $d NR $e NR $f NR $g NR $6 NR $7 R $8 R
+256 NR $a NR $6 NR $7 R $8 R
+257 R $a R $0 R $1 R $2 NR $6 NR $8 R
+258 R $a NR $b NR $6 NR $8 R
+263 NR $a NR $6 NR $8 R
+264 R $a R $b R $c R $3 NR $6 NR $7 R $8 R
+270 R $a R $b NR $c NR $d NR $e NR $f NR $g NR $h NR $i NR $j R $k R $l R $m R $n R $p R $q R $r R $z R $4 R $6 NR $8 R
+300 R $a R $b NR $c R $e NR $f R $g R $3 NR $6 NR $7 R $8 R
+306 NR $a R $6 NR $8 R
+307 R $a NR $b NR $6 NR $8 R
+310 R $a NR $b NR $0 NR $1 R $2 NR $6 NR $8 R
+321 R $a NR $b NR $0 NR $1 R $2 NR $6 NR $8 R
+334 R $a NR $b NR $0 R $1 R $2 NR $6 NR $8 R
+335 R $a NR $b NR $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+336 R $a R $b R $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+337 R $a R $b R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+338 R $a R $b R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+340 R $a R $b R $c R $d R $e R $f R $g R $h R $i R $j R $k R $l R $m R $n R $o R $p R $q R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+341 R $a NR $b R $c R $d R $e R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+342 R $a NR $b NR $c NR $d NR $e R $f R $g NR $h NR $i NR $j NR $k NR $l NR $m NR $n NR $o NR $p NR $q NR $r NR $s NR $t NR $u NR $v NR $w NR $2 NR $6 NR $8 R
+343 R $a NR $b NR $c NR $d NR $e NR $f NR $g NR $h NR $i NR $6 NR $8 R
+344 R $a R $b R $c R $d R $e R $f R $g R $h R $i R $j R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+345 R $a R $b R $c R $d R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+346 R $a R $b R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+347 R $a R $b R $c R $d R $e R $f R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+348 R $a R $b R $c R $d R $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+351 R $a R $b R $c NR $3 NR $6 NR $8 R
+352 R $a NR $b R $c R $d NR $e NR $f NR $g NR $i NR $q NR $6 NR $8 R
+353 R $a R $b R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+355 R $a NR $b R $c R $d NR $e NR $f NR $g NR $h NR $j R $6 NR $8 R
+357 NR $a NR $b R $c R $g R $6 NR $8 R
+361 R $a NR $f R $k NR $l NR $o R $s NR $u R $x R $y NR $z R $0 R $1 R $3 NR $5 NR $6 NR $7 R $8 R
+362 R $a NR $z NR $6 NR $8 R
+363 R $a NR $b NR $c NR $d NR $e NR $f NR $g NR $h NR $i NR $j NR $k NR $l NR $m NR $u NR $v NR $x R $z R $6 NR $8 NR
+365 R $a NR $b NR $c NR $d NR $e NR $f NR $g NR $h NR $i NR $j NR $k NR $m NR $2 NR $6 NR $8 R
+366 R $a NR $b NR $c NR $d NR $e NR $f NR $g NR $j NR $k NR $m NR $2 NR $6 NR $8 R
+370 R $c R $f R $g R $i R $s NR $t NR $u R $v R $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+377 R $a R $l R $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+380 R $a R $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+381 R $a R $u R $v R $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+382 R $a R $b R $d R $e R $n R $p R $r NR $s NR $t NR $v R $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+383 R $a R $b R $c R $d NR $e NR $2 NR $3 NR $6 NR $7 R $8 R
+384 R $a NR $0 R $1 R $3 NR $6 NR $7 R $8 R
+385 R $a R $b R $m NR $n NR $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+386 R $a R $b R $i R $m NR $n NR $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+387 R $a R $b R $c R $d R $e R $f R $g R $h R $i R $j R $k R $l R $m R $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+388 R $a R $0 R $1 R $2 NR $3 NR $6 NR $7 R $8 R
+490 R $a R $l NR $v R $x R $y R $z R $3 NR $6 NR $7 R $8 R
+500 R $a NR $3 NR $5 NR $6 NR $7 R $8 R
+501 R $a NR $5 NR $6 NR $7 R $8 R
+502 R $a NR $b NR $c NR $d NR $g R $o R $6 NR $7 R $8 R
+504 R $a NR $b NR $6 NR $8 R
+505 R $a NR $g R $r R $t R $u R $6 NR $7 R $8 R
+506 R $a NR $b R $c R $d R $e R $f R $g R $q NR $u R $0 R $1 R $2 NR $3 NR $5 NR $6 NR $8 R
+507 NR $a NR $b NR $6 NR $8 R
+508 R $a NR $3 NR $6 NR $7 R $8 R
+510 R $a NR $b NR $c NR $u R $x NR $3 NR $6 NR $7 R $8 R
+511 R $a NR $3 NR $6 NR $8 R
+513 R $a NR $b NR $6 NR $8 R
+514 NR $a NR $b R $c R $d NR $e NR $f NR $g R $h R $i NR $j R $k R $m NR $u R $z R $6 NR $8 R
+515 R $a NR $6 NR $7 R $8 R
+516 R $a NR $6 NR $8 R
+518 R $a NR $d R $o R $p R $0 R $1 R $2 R $3 NR $6 NR $7 R $8 R
+520 R $a NR $b NR $c NR $u R $2 NR $3 NR $6 NR $7 R $8 R
+521 R $a R $b NR $3 NR $6 NR $8 R
+522 R $a NR $6 NR $8 R
+524 R $a NR $2 NR $3 NR $6 NR $8 R
+525 R $a NR $6 NR $8 R
+526 R $a NR $b NR $c NR $d NR $i NR $x R $z R $5 NR $6 NR $8 R
+530 R $a NR $b NR $c NR $d NR $u R $3 NR $6 NR $8 R
+532 R $a NR $3 NR $6 NR $8 R
+533 R $a NR $b R $c R $d NR $e NR $f R $m R $n R $y R $3 NR $5 NR $6 NR $7 NR $8 R
+534 R $a NR $b NR $c NR $e NR $f R $k R $l NR $m NR $n R $o R $p NR $t NR $x R $z R $3 NR $6 NR $8 R
+535 R $a NR $b R $c R $d R $g NR $3 NR $6 NR $8 R
+536 R $a NR $b R $c R $d R $e R $f R $g R $h R $6 NR $8 R
+538 R $a NR $i NR $u R $3 NR $5 R $6 NR $8 R
+540 R $a NR $b NR $c NR $d NR $f R $g R $q NR $u R $0 R $1 R $2 NR $3 NR $5 NR $6 NR $8 R
+541 R $a NR $b NR $c NR $d NR $e NR $f NR $h NR $n R $o R $3 NR $5 NR $6 NR $8 R
+542 R $a NR $b NR $c NR $d R $e R $f R $g NR $h R $i NR $j NR $k R $l NR $m NR $n R $o NR $p R $q NR $r NR $s NR $u R $3 NR $6 NR $8 R
+544 R $a R $b R $c R $d R $e R $n R $3 NR $6 NR $8 R
+545 R $a NR $b NR $u R $6 NR $8 R
+546 R $a NR $b R $3 NR $6 NR $7 R $8 R
+547 R $a NR $6 NR $8 R
+550 R $a NR $6 NR $7 R $8 R
+552 R $a NR $b NR $c NR $d NR $e R $f R $g NR $h NR $i NR $j NR $k NR $l NR $m NR $n NR $o R $p R $u R $z R $6 NR $8 R
+555 R $a NR $b R $c NR $d NR $u R $3 NR $6 NR $7 R $8 R
+556 R $a NR $z R $6 NR $8 R
+561 R $a NR $u R $3 NR $5 NR $6 NR $8 R
+562 R $a R $b R $c R $d R $e R $3 NR $5 NR $6 NR $8 R
+563 R $a NR $u R $3 NR $5 NR $6 NR $8 R
+565 R $a NR $b R $c R $d R $e R $3 NR $6 NR $8 R
+567 R $a NR $b R $0 R $1 R $2 NR $6 NR $8 R
+580 R $a NR $5 NR $6 NR $8 R
+581 R $a NR $z R $3 NR $6 NR $8 R
+583 R $a NR $b R $c R $d R $e R $f R $h R $i R $j R $k R $l R $n R $o R $u R $x R $z R $2 NR $3 NR $5 NR $6 NR $7 R $8 R
+584 R $a R $b R $3 NR $5 NR $6 NR $8 R
+585 R $a NR $3 NR $5 NR $6 NR $8 R
+586 R $a NR $3 NR $6 NR $8 R
+588 R $a NR $5 NR $6 NR $8 R
+600 R $a NR $b NR $c R $d NR $e R $f NR $g R $h NR $j R $k R $l NR $m R $n R $o NR $p R $q NR $r NR $s R $t NR $u NR $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+610 R $a NR $b R $c R $d R $e R $f NR $g R $h NR $k R $l NR $m R $n R $o NR $p R $r NR $s R $t NR $u NR $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+611 R $a NR $c R $d R $e R $f NR $g R $h NR $j R $k R $l NR $n R $p R $q NR $s R $t NR $u NR $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+630 R $a NR $d R $e R $f NR $g R $h NR $k R $l NR $m R $n R $o NR $p R $r NR $s R $t NR $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+647 R $a NR $c R $d NR $e R $g R $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $4 R $6 NR $8 R
+648 R $a NR $e R $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+650 R $a NR $b NR $c NR $d NR $e R $g R $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+651 R $a NR $e R $g R $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+653 R $a R $0 R $1 R $5 NR $6 NR $7 R $8 R
+654 R $a R $b R $c R $e R $v R $y R $z R $0 R $1 R $2 NR $3 NR $4 R $6 NR $8 R
+655 R $a NR $b R $c R $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $5 NR $6 NR $7 R $8 R
+656 R $a NR $k NR $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+657 R $a NR $v R $x R $y R $z R $0 R $1 R $2 NR $3 NR $6 NR $8 R
+658 R $a NR $b R $c NR $d NR $0 R $1 R $2 NR $6 NR $8 R
+662 R $a R $b NR $c R $d NR $e R $f R $g R $h R $0 R $1 R $2 NR $4 R $6 NR $8 R
+688 R $a NR $e R $g R $0 R $1 R $2 NR $3 NR $4 R $6 NR $8 R
+700 R $a NR $b NR $c R $d NR $e R $f NR $g R $h NR $i R $j R $k R $l NR $m R $n R $o NR $p R $q NR $r NR $s R $t NR $u NR $x NR $0 R $1 R $2 NR $3 NR $4 R $5 NR $6 NR $7 R $8 R
+710 R $a NR $b R $c R $d R $e R $f NR $g R $h NR $i R $k R $l NR $m R $n R $o NR $p R $r NR $s R $t NR $u NR $x NR $0 R $1 R $2 NR $3 NR $4 R $5 NR $6 NR $7 R $8 R
+711 R $a NR $c R $d R $e R $f NR $g R $h NR $i R $j R $k R $l NR $n R $p R $q NR $s R $t NR $u NR $x NR $0 R $1 R $2 NR $4 R $5 NR $6 NR $7 R $8 R
+720 R $a NR $e R $0 R $1 R $4 R $5 NR $6 NR $7 R $8 R
+730 R $a NR $d R $f NR $g R $h NR $i R $k R $l NR $m R $n R $o NR $p R $r NR $s R $t NR $x NR $0 R $1 R $2 NR $3 NR $4 R $5 NR $6 NR $8 R
+740 R $a NR $h NR $n R $p R $5 NR $6 NR $8 R
+751 R $a NR $e R $g R $0 R $1 R $2 NR $3 NR $4 R $6 NR $7 R $8 R
+752 R $a R $b NR $c R $d NR $e R $f R $g R $h R $0 R $1 R $2 NR $4 R $6 NR $8 R
+753 R $a NR $b NR $c NR $0 R $1 R $2 NR $6 NR $8 R
+754 R $a R $c R $d R $x R $z R $0 R $1 R $2 NR $6 NR $8 R
+758 R $a NR $i R $0 R $1 R $2 NR $3 NR $4 R $5 NR $6 NR $8 R
+760 R $a NR $b NR $c NR $d NR $g R $h NR $i R $l R $m NR $n R $o R $s NR $t NR $w R $x NR $y NR $4 R $6 NR $7 NR $8 R
+762 R $a NR $b NR $c NR $d NR $g R $h NR $i R $l R $m NR $n R $o R $s NR $t NR $w R $x NR $y NR $4 R $6 NR $7 NR $8 R
+765 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+767 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+770 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+772 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+773 R $a NR $b NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $p NR $q NR $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $3 NR $4 R $5 NR $6 NR $7 NR $8 R
+774 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $5 NR $6 NR $7 NR $8 R
+775 R $a NR $b NR $c NR $d NR $e NR $f NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+776 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+777 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+780 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+785 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+786 R $a NR $b NR $c NR $d NR $g R $h NR $i R $j NR $k R $l R $m NR $n R $o R $p NR $r R $s NR $t NR $u NR $v NR $w R $x NR $y NR $z R $4 R $6 NR $7 NR $8 R
+787 R $a NR $b NR $c NR $d NR $g R $h NR $i R $k R $l R $m NR $n R $o R $r R $s NR $t NR $u NR $w R $x NR $y NR $z R $4 R $5 NR $6 NR $7 NR $8 R
+788 R $a NR $b NR $d NR $e NR $i R $l R $n R $s NR $t NR $w R $x NR $4 R $5 NR $6 NR $8 R
+800 R $a NR $b NR $c R $d NR $e R $f NR $g R $h NR $j R $k R $l NR $m R $n R $o NR $p R $q NR $r NR $s R $t NR $u NR $v NR $w R $x NR $y R $0 R $1 R $2 NR $3 NR $4 R $5 R $6 NR $7 NR $8 R
+810 R $a NR $b R $c R $d R $e R $f NR $g R $h NR $k R $l NR $m R $n R $o NR $p R $r NR $s R $t NR $u NR $v NR $w R $x NR $y R $0 R $1 R $2 NR $3 NR $4 R $5 R $6 NR $7 NR $8 R
+811 R $a NR $c R $d R $e R $f NR $g R $h NR $j R $k R $l NR $n R $p R $q NR $s R $t NR $u NR $v NR $w R $x NR $y R $0 R $1 R $2 NR $3 NR $4 R $5 R $6 NR $7 NR $8 R
+830 R $a NR $d R $f NR $g R $h NR $k R $l NR $m R $n R $o NR $p R $r NR $s R $t NR $v NR $w R $x NR $y R $0 R $1 R $2 NR $3 NR $5 R $6 NR $7 NR $8 R
+850 R $a R $8 R
+852 R $a NR $b R $c R $d R $e R $f R $g R $h NR $i R $j NR $k R $l NR $m R $n NR $p NR $q NR $s R $t NR $u R $x R $z R $2 NR $3 NR $6 NR $8 NR
+856 R $a R $c R $d R $e R $f R $g R $h R $l R $m R $n R $o NR $p NR $q R $r R $s R $t R $u R $v R $w R $x R $y R $z R $2 NR $3 NR $6 NR $7 NR $8 R
+857 R $b NR $c NR $d NR $e R $f NR $g R $h R $l R $m R $n R $q R $r R $s R $t R $u R $x R $y R $z R $2 NR $3 NR $5 NR $6 NR $7 NR $8 R
+880 R $6 NR
+881 R $a R $b R $c R $d R $e R $f R $g R $h R $i R $j R $k R $l R $m R $n R $3 NR $6 NR $8 R
+882 NR $a R $i R $w R $6 NR $8 R
+883 R $a NR $c NR $d NR $q NR $x NR $u NR $w R $0 R $1 R $8 R
+884 R $a NR $g NR $k NR $q NR $u R
+885 R $a NR $b NR $c NR $d NR $w R $x R $z R $0 R $1 R $2 NR $5 NR
+886 R $a NR $b NR $2 NR $a-z R $0-9 R
+887 R $a NR $2 NR
