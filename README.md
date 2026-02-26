@@ -85,3 +85,7 @@ This folder has its own README.md.  In brief, the folder contains a workflow for
 
 This folder has its own README.md.  At the moment, this is just a console application to extract gender data from the LCNAF.
 
+## The Utilties folder
+
+This folder has its own README.md.  The folder contains a number of command line programs useful for filtering or printing MARC files.
+
