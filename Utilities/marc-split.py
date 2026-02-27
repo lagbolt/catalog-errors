@@ -87,7 +87,7 @@ if __name__ == "__main__":
     parser.add_argument("--output", "-o", required=True,
                         help="Output MARC file for records up to split")
     parser.add_argument("--extra", "-x", required=True,
-                        help="Output MARC file for records after split")
+                        help="Output MARC file for records at andafter split")
     parser.add_argument("--field", "-f", required=True,
                         help="Split input records on the first occurrence of this field")
     
