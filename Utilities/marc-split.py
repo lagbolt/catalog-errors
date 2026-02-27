@@ -45,6 +45,13 @@ def tags(record):
 def process_input_file(args):
     split_field = args.field
 
+    input_records = 0
+    input_fields = 0
+    first_output_records = 0
+    first_output_fields = 0
+    second_output_records = 0
+    second_output_fields = 0
+
     with (open(args.input, 'rb') as inf,
             open(args.output, 'wb') as outf,
             open(args.extra, 'wb') as extraf):
@@ -55,6 +62,8 @@ def process_input_file(args):
         for input_record in reader:
 
             if input_record is None: continue
+
+            input_records += 1
             
             extra_flag = False
             extra_record = Record()
@@ -62,19 +71,29 @@ def process_input_file(args):
 
             # all_fields is needed because  we are deleting fields from input_record
             all_fields = list(input_record.fields)
+            first_output_fields += len(all_fields)  # will be reduced as we remove fields from input_record
             for fld in all_fields:
+                input_fields += 1
                 # Split on the first occurrence of the specified field and all subsequent fields
                 if extra_flag or (fld.tag == split_field):
                     input_record.remove_field(fld)
+                    first_output_fields -= 1
                     extra_flag = True
                     extra_record.add_field(fld)
+                    second_output_fields += 1   
 
             writer.write(input_record)
+            first_output_records += 1
             if extra_flag:
                 extrawriter.write(extra_record)
+                second_output_records += 1
 
             if original_tags != (tags(input_record) + tags(extra_record)):
-                raise IncorrectOutputError("Output records do not match input record")      
+                raise IncorrectOutputError("Output records do not match input record")
+
+    print(f"Input records: {input_records}; Input fields: {input_fields}")
+    print(f"First output records: {first_output_records}; First output fields: {first_output_fields}")
+    print(f"Second output records: {second_output_records}; Second output fields: {second_output_fields}")    
 
 
 if __name__ == "__main__":
