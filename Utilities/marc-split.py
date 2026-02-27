@@ -1,3 +1,35 @@
+#
+#   Read a MARC file and split each record into two parts, writing the first part to one output file
+#   and the second part to another output file. The split happens on the first occurrence of a specified field.
+#
+#    Usage:  python marc-split.py
+#               -i <MARC input file>
+#               -o <MARC output file for records up to split>
+#               -x <MARC output file for records at and after split> 
+#               -f <field to split on>
+#
+#   For example:
+#
+#       python marc-split.py -i input.mrc -o output1.mrc -x output2.mrc -f 650
+#
+#   Assuming the splitting field occurs in every record, each output file will contain the same number of
+#   records as the input file, but the fields in each input record will be split between the two output files.
+#   The first output file will contain all fields up to (but not including) the first occurrence of a 650
+#   field, and the second output file will contain the first 650 field and all subsequent fields.
+#
+#    If the splitting field does not occur in a record, that record will be written only to the first output
+#    file and will not occur in the second output file.
+#
+#    If you find yourself wishing for something slightly different, please let me know.
+#
+#    Version:  0.1.0  2/26/26
+#
+#    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
+#
+#    Graeme Williams
+#    carryonwilliams@gmail.com
+#
+
 import argparse
 from pymarc import MARCReader, MARCWriter, Record
 
@@ -38,7 +70,8 @@ def process_input_file(args):
                     extra_record.add_field(fld)
 
             writer.write(input_record)
-            extrawriter.write(extra_record)
+            if extra_flag:
+                extrawriter.write(extra_record)
 
             if original_tags != (tags(input_record) + tags(extra_record)):
                 raise IncorrectOutputError("Output records do not match input record")      
