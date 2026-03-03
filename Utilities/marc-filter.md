@@ -20,7 +20,7 @@ The utility uses named arguments to manage input, output, and filtering criteria
 
 The `-m` or `--match` argument defines the criteria used to determine which records are written to the output.  The expression may be a single filter, or a number of filters combined with boolean operators.
 
-### 1. Filters
+### Filters
 
 A filter is the building block of an expression:
 
@@ -30,9 +30,9 @@ Tag [$Subfield] Pattern
 
 * **Tag**: A 3-digit MARC tag (e.g., `100`).
 * **Subfield (Optional)**: Use `$` followed by the code (e.g., `$a`). If omitted, the entire field value is searched.
-* **Pattern**: A regular expression, which can be as simple as a single word (e.g., "syzygy").  Patterns containing spaces **must** be wrapped in double quotes (e.g., `"The Matrix"`).
+* **Pattern**: A regular expression, which can be as simple as a single word (e.g., 'syzygy').  Patterns containing spaces **must** be wrapped in single quotes (e.g., 'The Matrix').
 
-### 2. Operators
+### Operators
 
 Combine filters using standard boolean logic:
 
@@ -41,7 +41,13 @@ Combine filters using standard boolean logic:
 * `NOT`: Excludes records matching the condition.
 * `( )`: Used to group logic and define evaluation order.
 
----
+### Quoting
+
+The entire match condition should be enclosed in double quotes.  If the regex pattern
+contains spaces, it should be enclosed in single quotes.
+```
+--match "245 $a Python AND 650 'Computer programming'"
+```
 
 ## Examples
 
@@ -59,7 +65,7 @@ python marcfilter.py -i library.mrc -m "100 smith" -f 245 650
 Find records with subjects which include "Psych" followed by "ology" or "iatry":
 
 ```
-python marcfilter.py -i library.mrc -c -m '650 "Psych(ology|iatry)"'
+python marcfilter.py -i library.mrc -c -m "650 'Psych(ology|iatry)'"
 
 ```
 
@@ -68,15 +74,19 @@ python marcfilter.py -i library.mrc -c -m '650 "Psych(ology|iatry)"'
 Save records with a title which includes "The Great Gatsby" to a new file, keeping only the 100 and 245 fields:
 
 ```
-python marcfilter.py -i library.mrc -o gatsby.mrc -m '245 $a "The Great Gatsby"' -f 100 245
+python marcfilter.py -i library.mrc -o gatsby.mrc -m "245 $a 'The Great Gatsby'" -f 100 245
 
 ```
 
 ### Complex Boolean Logic
 
-Save records with author "smith" AND one of two specific words anywhere in the 245 field:
+Save records with author 'smith' AND either 'toad' or 'frog' anywhere in the 245 field:
 
 ```
-python marcfilter.py -i library.mrc -o results.mrc -m '100 $a smith AND (245 frog OR 245 toad)'
+python marcfilter.py -i library.mrc -o results.mrc -m "100 $a smith AND (245 frog OR 245 toad)"
 
+```
+Note that this is the same as:
+```
+python marcfilter.py -i library.mrc -o results.mrc -m "100 $a smith AND 245 frog|toad"
 ```

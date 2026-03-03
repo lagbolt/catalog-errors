@@ -10,10 +10,13 @@
 #              [--count]
 #
 #    The --match expression consists of one or match conditions combined with AND, OR, NOT
-#    and parentheses.  Each condition is of the form: <tag> [$<subfield>] "regex pattern".
+#    and parentheses.  Each condition is of the form: <tag> [$<subfield>] <regex pattern>.
+#    The entire match condition should be enclosed in double quotes.  If the regex pattern
+#    contains spaces, it should be enclosed in single quotes.
+#
 #    For example:
 #
-#        --match '245 $a "Python" AND 650 "Programming"'
+#        --match "245 $a Python AND 650 'Computer programming'"
 #
 #    If --output is not specified, matching records will be printed to the terminal.
 #    If --fields is specified, only those tags will be included in the output.
@@ -55,13 +58,13 @@ def process_marc(args):
     if args.match:
 
         # This will capture each individual condition in the match expression
-        condition_regex = r'(\d{3})\s+(?:\$([a-z0-9])\s+)?("(?:[^"\\]|\\.)*"|\S+)'
+        condition_regex = r"(\d{3})\s+(?:\$([a-z0-9])\s+)?('(?:[^'\\]|\\.)*'|\S+)"
         
         def condition_replacer(match):
             # Collect the components of the condition from the regex match
             tag = match.group(1)
             subfield = match.group(2) 
-            pattern_raw = match.group(3).strip('"') 
+            pattern_raw = match.group(3).strip("'")
             try:
                 compiled_re = re.compile(pattern_raw, re.IGNORECASE)
                 # Collecting each condition is a side effect of calling this
