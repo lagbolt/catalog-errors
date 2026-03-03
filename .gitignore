@@ -2,3 +2,5 @@
 .vscode
 secrets.py
 *.ndjson
+**/*.mrc
+**/*.mrk

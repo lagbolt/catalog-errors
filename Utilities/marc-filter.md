@@ -10,7 +10,7 @@ The utility uses named arguments to manage input, output, and filtering criteria
 | --- | --- | --- |
 | `-i` | --input | **Required.** The path to the source MARC (`.mrc`) file. |
 | `-o` | --output | The filename for saving matching records. If omitted, records are printed to the terminal as text. |
-| `-m` | --match | The boolean expression used to filter records. |
+| `-m` | --match | The boolean expression used to filter records.  If omitted, all records are included. |
 | `-f` | --fields | A space-separated list of field tags (e.g., `100 245`) to display or save. If omitted, the full record is written. |
 | `-c` | --count | If present, prints the total match count to the terminal. |
 
