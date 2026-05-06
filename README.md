@@ -8,9 +8,10 @@ In this folder:
 * Python libraries in the lib folder
 * a series of console applications, listed below
 * the LCSH folder, containing a workflow for checking subject headings
-* the LCNAF folder, containing a console application for collecting gender data from the LCNAF
+* the LCNAF folder, containing an old console application for collecting gender data from the LCNAF
+* the Utilities folder, containing general-purpose MARC utilities (not specific to quality assessment)
 
-Btw, if you need help, email me or message me on Twitter @lagbolt.
+Btw, if you need help, email me or message me here.
 
 ## A note about checking
 
