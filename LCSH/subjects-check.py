@@ -26,7 +26,7 @@
 #        (C)   Subfield is not present in LCSH but is present in Children's Subject Headings
 #        (D)   Subfield is a date (i.e., subfield $d)
 #        (FC)  Subfield is a ficitious character
-#        (I)   Subfield is ignored
+#        (I)   Subfield is ignored (i.e., not $a, $b, or $x)
 
 #    Known issues:
 #
@@ -36,6 +36,7 @@
 #    $x, $y and $z subdivisions.
 #
 #    Version:  0.2.0  4/10/25
+#    Version:  0.2.1  9/15/26  [Ignoring everything except $a, $b and $x.]
 #
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
@@ -150,7 +151,7 @@ def main():
                 elif subfieldcode == 'd':    # date => person from LCNAF
                     printString += "(D) : "     # D for date
                     printFlag = False        # forgive earlier errors (presumably name)
-                elif subfieldcode in ['c', 'v', '2']:
+                elif subfieldcode not in ['a', 'b', 'x']:
                     printString += "(I) : "     # I for ignore
                 elif subfieldvalue in subjectTermsSet:
                     printString += "(Y) : "  # Y for yes, found
