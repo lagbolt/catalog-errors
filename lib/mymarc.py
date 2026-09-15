@@ -1,5 +1,6 @@
 # 
 #    Version:  0.2.0  4/10/25
+#    Version:  0.2.1  9/15/26  [Added 001 and 035 fields as possibilities for bibnumber.]
 # 
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
@@ -46,10 +47,16 @@ def namefromMARC(subfield_a, subfield_d, flip = False) -> tuple:      # subfield
 def readfromfile(filename):
     with open(filename, 'rb') as marc_input:
         for aRecord in pymarc.MARCReader(marc_input):
-            # if you have a MARC field you want to use to identify the record
-            # assign it to bibnumber here -- as a string
-            bibnumber = ""
-            yield bibnumber, aRecord
+            if aRecord:
+                # if you have a MARC field you want to use to identify the record
+                # assign it to bibnumber here -- as a string
+                if v := aRecord.get('001'):
+                    bibnumber = v
+                elif v := aRecord.get('035'):
+                    bibnumber = v
+                else:
+                    bibnumber = ""
+                yield bibnumber, aRecord
 
 # depending on the input, make a generator out of a MARC
 # input file or a database table
