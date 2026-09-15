@@ -8,11 +8,12 @@
 #              [--match <boolean expression>]
 #              [--fields <tags>]
 #              [--show-matches]
+#              [--quiet]
 #              [--count]
 #
 #    The --match expression consists of one or match conditions combined with AND, OR, NOT
 #    and parentheses.  Each condition is of the form: <tag> [$<subfield>] <regex pattern>.
-#    The tag may contain 'X' as a wildcard for any single digit (e.g. 65X matches 650-659).
+#    Use 'X' as a wildcard in the tag (e.g. 65X matches 650-659).
 #    The entire match condition should be enclosed in double quotes.  If the regex pattern
 #    contains spaces, it should be enclosed in single quotes.
 #
@@ -22,17 +23,19 @@
 #        --match "65X frog"
 #
 #    If --output is not specified, matching records will be printed to the terminal.
-#    If --fields is specified, only those tags will be included in the output; tags may
-#    contain 'X' as a wildcard for any single digit (e.g. 65X matches 650-659).
+#    If --fields is specified, only those tags will be included in the output; use 'X'
+#    as a wildcard in a tag (e.g. 65X matches 650-659).
 #    If --show-matches is specified (terminal output only), fields that satisfied the
 #    --match conditions are also printed, in addition to any fields listed in --fields.
+#    If --quiet is specified, matched records are not printed or written at all; combine
+#    with --count to get only a count of matches, with no record output.
 #    If --count is specified, a summary of total records processed and matches found will be printed.
 #
 #    If you find yourself wishing for something slightly different, please email me.
 #
 #    Edited by Claude.
 #
-#    Version:  0.2.3  9/14/26
+#    Version:  0.3.0  9/15/26
 #
 #    License:  CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
@@ -99,7 +102,7 @@ def parse_match_expression(match_str):
 
 def get_matching_fields(record, tag_specs):
     """Returns the record's fields whose tag matches any of the given tag specs
-    (each of which may contain 'X' as a single-digit wildcard, e.g. 65X)."""
+    (each of which may use 'X' as a wildcard, e.g. 65X)."""
     tag_patterns = [compile_tag_pattern(spec) for spec in tag_specs]
     return [field for field in record.fields if any(p.match(field.tag) for p in tag_patterns)]
 
@@ -165,10 +168,11 @@ def process_marc(args):
             if eval(eval_logic, {"__builtins__": {}}, {"__results": results}):
                 match_count += 1
 
-                if writer:
-                    write_matched_record(record, writer, args.fields)
-                else:
-                    print_matched_record(record, results, total_records, args.fields, args.show_matches)
+                if not args.quiet:
+                    if writer:
+                        write_matched_record(record, writer, args.fields)
+                    else:
+                        print_matched_record(record, results, total_records, args.fields, args.show_matches)
 
         if writer:
             writer.close()
@@ -183,6 +187,7 @@ if __name__ == "__main__":
     parser.add_argument("--match", "-m", help="Boolean expression for filtering records")
     parser.add_argument("--fields", "-f", nargs="+", help="Specific tags to output, 'X' wildcards a digit (e.g., 100 65X)")
     parser.add_argument("--show-matches", "-s", action="store_true", help="Also print fields that matched --match, in addition to --fields")
+    parser.add_argument("--quiet", "-q", action="store_true", help="Suppress printing/writing matched records (use with --count for just a count)")
     parser.add_argument("--count", "-c", action="store_true", help="Print match count to terminal")
 
     args = parser.parse_args()
