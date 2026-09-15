@@ -1,0 +1,9 @@
+argparse
+mysql-connector-python
+pymarc
+requests
+xmltodict
+
+## only needed if running on pythonanywhere.com
+
+mysqlclient
