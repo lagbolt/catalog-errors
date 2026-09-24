@@ -36,8 +36,10 @@ authorSet : Set[str] = set()
 def to_string_simple(the_record : Record) -> str:
     # This is just for identifying faulty records in the output.
     # You can use whatever MARC fields you want here
-    part1 = the_record['001'].data if the_record['001'] else "No 001"
-    part2 = the_record['245']['a'][:60] if the_record['245'] else "No 245"
+    fields_001 = the_record.get_fields('001')
+    part1 = fields_001[0].data if fields_001 else "No 001"
+    fields_245 = the_record.get_fields('245')
+    part2 = (fields_245[0].get('a') or "")[:60] if fields_245 else "No 245"
     return part1 + '/' + part2
 
 # *** Next four functions are concerned with harvesting author data
@@ -46,13 +48,16 @@ def to_string_simple(the_record : Record) -> str:
 
 # for each 100 and 700 field the $a and $d fields are jammed together; we split them later
 def collect_authors(arecord : Record):
-    afield : Field = arecord['100']
-    if afield and afield['a']:
-        aname = afield['a'].rstrip(",.") + ("#" + afield['d'].rstrip(",.") if afield['d'] else "")
+    fields_100 = arecord.get_fields('100')
+    if fields_100 and fields_100[0].get('a'):
+        afield = fields_100[0]
+        d = afield.get('d')
+        aname = afield.get('a').rstrip(",.") + ("#" + d.rstrip(",.") if d else "")
         authorSet.add(aname)
     for f in arecord.get_fields('700'):
-        if f['a']:
-            aname = f['a'].rstrip(",.") + ("#" + f['d'].rstrip(",.") if f['d'] else "")
+        if f.get('a'):
+            d = f.get('d')
+            aname = f.get('a').rstrip(",.") + ("#" + d.rstrip(",.") if d else "")
             authorSet.add(aname)
 
 # split author string into name, birth date, death date, with missing values == None
@@ -86,17 +91,18 @@ def check_for_duplicate_authors() -> List[str]:
 # *** Predicates that are too complicated to put into a lambda go here ***
 
 def no1xx7xx(the_record : Record) -> bool:
-    return not any([the_record[f] for f in ['100', '110', '700', '710','711', '720', '730']])
+    return not any([the_record.get_fields(f) for f in ['100', '110', '700', '710','711', '720', '730']])
 
 # return true if this record has a 245c with "and others" but no 1xx/7xx
 # yes, I know this is an odd test; it was an experiment
 def check245c1xx7xx(the_record : Record) -> bool:
-    s = the_record['245']['c']
-    return s and ("and others" in s) and no1xx7xx(theRecord)
+    fields_245 = the_record.get_fields('245')
+    s = fields_245[0].get('c') if fields_245 else None
+    return bool(s and ("and others" in s) and no1xx7xx(the_record))
 
 # return true if this record has a 6xx field with indicator 2 = 7 but no $2 subfield
 def indicator7butnodollar2(the_record : Record) -> bool:
-    return any([f.indicator2=='7' and not f.get_subfields('2') for f in the_record.subjects()])
+    return any([f.indicator2=='7' and not f.get_subfields('2') for f in the_record.subjects])
 
 # Return true if this record has duplicate 650 subject headings,
 # ignoring the trailing dot, if any.  The most common use case is
@@ -111,7 +117,7 @@ def duplicate_subjects(the_record : Record) -> bool:
         return False
     # turn each 650 field into a dict and add it to field_list
     for f in subject_fields:
-        field_dict = { k : f[k].rstrip('.') for k in subfields650 if f[k]}
+        field_dict = { k : f.get(k).rstrip('.') for k in subfields650 if f.get(k) }
         field_list.append(field_dict)
     # check the list for duplicate dicts
     for i in range(0, len(field_list)):
@@ -141,29 +147,29 @@ def checkfactory(label: str, predicate: Callable, print_this: Callable = None) -
 checkList = (
 
     # using inline lambda functions
-#    checkfactory('100', lambda r: r['100']),
-    checkfactory('no 001', lambda r: not r['001']),
-    checkfactory('no 006', lambda r : not r['006']),
-    checkfactory('no 100', lambda r: not r['100']
+#    checkfactory('100', lambda r: r.get_fields('100')),
+    checkfactory('no 001', lambda r: not r.get_fields('001')),
+    checkfactory('no 006', lambda r: not r.get_fields('006')),
+    checkfactory('no 100', lambda r: not r.get_fields('100')
                 , to_string_simple
                 ),
-    checkfactory('245', lambda r: r['245']),
-#    checkfactory('no 245', lambda r: not r['245']),
-    checkfactory('no 245c', lambda r: not r['245']['c']
+    checkfactory('245', lambda r: bool(r.get_fields('245'))),
+#    checkfactory('no 245', lambda r: not r.get_fields('245')),
+    checkfactory('no 245c', lambda r: not (r.get_fields('245') and r.get_fields('245')[0].get('c'))
                 , to_string_simple
                 ),
     checkfactory('old style 041',
-                 lambda r: r['041'] and r['041']['a'] and len(r['041']['a']) > 3
-#                , lambda r : r['041']
+                 lambda r: bool(r.get_fields('041') and r.get_fields('041')[0].get('a') and len(r.get_fields('041')[0].get('a')) > 3)
+#                , lambda r : r.get_fields('041')
                  ),
-    checkfactory('041 but no 546', lambda r: r['041'] and not r['546']
+    checkfactory('041 but no 546', lambda r: bool(r.get_fields('041') and not r.get_fields('546'))
                 , to_string_simple 
                 ),
     checkfactory('041h w. wrong indicator',
-                 lambda r : r['041'] and r['041']['h'] and r['041'].indicators[0] != '1'
-#                , lambda r : r['041']
+                 lambda r : bool(r.get_fields('041') and r.get_fields('041')[0].get('h') and r.get_fields('041')[0].indicators[0] != '1')
+#                , lambda r : r.get_fields('041')
                  ),
-#    checkfactory('999', lambda r: r['999']),
+#    checkfactory('999', lambda r: r.get_fields('999')),
 
     # using predicate functions defined above
     checkfactory('no 1xx or 7xx', no1xx7xx
@@ -204,4 +210,3 @@ print("\nPossible duplicate NARs")
 print(*check_for_duplicate_authors(), sep="\n")
 
 # print(sorted(authorSet))
-
