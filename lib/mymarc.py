@@ -51,8 +51,8 @@ def readfromfile(filename):
                 # if you have a MARC field you want to use to identify the record
                 # assign it to bibnumber here -- as a string
                 if v := aRecord.get('001'):
-                    bibnumber = v
-                elif v := aRecord.get('035'):
+                    bibnumber = v.data
+                elif f := aRecord.get('035') and v := f.get('a')
                     bibnumber = v
                 else:
                     bibnumber = ""
