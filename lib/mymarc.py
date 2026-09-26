@@ -31,9 +31,10 @@ def flipnames(lastnamefirst:str) -> str:
     lastname, firstnames = lastnamefirst.split(',', 1)  # split only on the first comma
     return namestrip(firstnames) + lastname
 
+# Unused! 
 def namefromMARC(subfield_a, subfield_d, flip = False) -> tuple:      # subfield_d can be None
     # strip punctuation from subfield a
-    t = ( flipnames(subfield_a) ) if flip else ( namestrip(subfield_a) )
+    t = ( flipnames(subfield_a), ) if flip else ( namestrip(subfield_a), )
     # any punctuation weirdness in subfield d will be carried forward
     if subfield_d:
         dates = subfield_d.split('-')                   # either one date + '' or two dates
@@ -52,7 +53,7 @@ def readfromfile(filename):
                 # assign it to bibnumber here -- as a string
                 if v := aRecord.get('001'):
                     bibnumber = v.data
-                elif f := aRecord.get('035') and v := f.get('a')
+                elif (f := aRecord.get('035')) and (v := f.get('a')):
                     bibnumber = v
                 else:
                     bibnumber = ""
